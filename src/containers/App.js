@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';                        // Para el título y evitar usar hooks para un titulo
 import Navigation from '../components/Navigation/Navigation';
+import Introduction from '../components/Introduction/Introduction';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       </Helmet>
 
       <Navigation />
-      <h1 className="f1"> SERGIO NAVA WEBSITE </h1>
+      <Introduction />
     </div>
   );
 }
