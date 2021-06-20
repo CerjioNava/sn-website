@@ -7,18 +7,35 @@ const Introduction = () => {
 
     return (
         
-        <div style={{ display: "flex" }} className="justify-center">
+        <div style={{ display: "flex" }} className="mh5 mv5">
             
-            <Tilt className="Tilt shadow-2 br-pill" options={{ max: 40 }} style={{ height: 300, width: 300 }} >
-                <img alt="logo" src={profile} className="br-pill shadow-2" />
-            </Tilt>
-            <div>
+            <div className="fl w-50 justify-center flex">
+                <Tilt className="Tilt shadow-2 br-pill image" options={{ max: 0 }} >
+                    <img alt="logo" src={profile} className="br-pill shadow-2 image" />
+                </Tilt>
+            </div>
+            
+            <div className="w-50 intro">
+                <h1>Hello there! I'm <br/>
+                    <span>Sergio Nava</span>
+                </h1>
                 <p>
-                    HOLA
+                    <br/>
+                    I'm a Web Developer and self-taught Videogame Developer <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                    
                 </p>
             </div>
 
         </div>
+        
+        
 
     )
 

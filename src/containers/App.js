@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';                        // Para el título y evitar usar hooks para un titulo
+
 import Navigation from '../components/Navigation/Navigation';
 import Introduction from '../components/Introduction/Introduction';
+import Skills from '../components/Skills/Skills';
+import CanvasAll from '../components/CanvasAll/CanvasAll.js'
 import './App.css';
 
 function App() {
-  
-  // useEffect(() => {
-  //   document.title = 'SN DEVELOPMENT';
-  // }, [])
 
-  return (    
-    <div className="tc">      
-      <Helmet>
-        <title>Sergio Nava | Desarrollador</title>
-      </Helmet>
-
+  return (      
+    <div>
+      <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
       <Navigation />
-      <Introduction />
-    </div>
+      
+      <CanvasAll />
+
+      {/* <div className="tc">      
+        <Helmet>
+          <title>Sergio Nava | Desarrollador</title>
+        </Helmet>
+        <Introduction />
+        <Skills />
+      </div>           */}
+
+    </div>     
   );
 }
 

@@ -1,0 +1,16 @@
+
+span {
+    font-size:2.8em;
+    color: navy;
+}
+
+intro {
+    display: "flex"; 
+    flex-direction:"column"; 
+    justify-content:"center";
+}
+
+image {
+    height: 400;
+    width: 400 
+}

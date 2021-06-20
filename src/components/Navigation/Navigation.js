@@ -6,12 +6,12 @@ const Navigation = () => {
     return (
         <nav className="flex justify-between bb bw2 b--light-blue" >            
             <div>
-                <p class="f3 pa2 link bg-animate hover-bg-lightest-blue pointer b ml4">
-                    <a class="alink">(LOGO)</a>
+                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer b ml4">
+                    <a className="alink">(LOGO)</a>
                 </p>
             </div>
 
-            <div class="flex">
+            <div className="flex">
                 <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer mr4">
                     <a href="https://www.google.com/" class="alink">Home</a>
                 </p>
