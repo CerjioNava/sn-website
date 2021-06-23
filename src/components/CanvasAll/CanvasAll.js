@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect } from 'react';
 import { Canvas } from "@react-three/fiber";
-import ModelContent from '../ModelContent/ModelContent';
-import { Box } from '@react-three/drei';
+import Fun from '../Fun/Fun';
 import './CanvasAll.css';
 
 
@@ -17,12 +16,19 @@ const CanvasAll = () => {
       id='canva'
       colorManagment
       concurrent
-      camera={{ position: [0, 0, 10], fov: 70 }}
+      camera={{ position: [0, 0, 15], fov: 70 }}
     >
-      < Suspense fallback={null} >
-        <ModelContent />
-        
-        {/* <Box args={[5, 5, 5]} /> */}
+      <ambientLight intensity={1} />
+      <directionalLight 
+          castShadow
+          position={[0, 10, 0]} 
+          intensity={2} 
+        />
+      <pointLight position={[-10, 0, -20]} intensity={0.5} />        
+      <pointLight position={[0, -10, 0]} intensity={1.5} />
+      
+      <Suspense fallback={null} >
+        <Fun />        
       </Suspense>
     </Canvas>
   )

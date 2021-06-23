@@ -1,30 +1,32 @@
 import React from 'react';
 import './Navigation.css';
 
+// bb bw2 b--light-blue
+
 const Navigation = () => {
 
     return (
-        <nav className="flex justify-between bb bw2 b--light-blue" >            
+        <nav className="flex justify-between pa4 f4" >            
             <div>
-                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer b ml4">
-                    <a className="alink">(LOGO)</a>
+                <p className="ma4 b f3">
+                    <a href="/" className="alink">SERGIO NAVA</a>
                 </p>
             </div>
 
-            <div className="flex">
-                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer mr4">
-                    <a href="https://www.google.com/" class="alink">Home</a>
+            <div className="flex mr2">
+                <p className="ma4 ml2">
+                    <a href="/" className="alink">Home</a>
                 </p>
-                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer mr4">
-                    <a href="" class="alink">About</a>
+                <p className="ma4 ml2">
+                    <a href="/" className="alink">About</a>
                 </p>
-                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer mr4">
-                    <a href="" class="alink">Portfolio</a>    
+                <p className="ma4 ml2">
+                    <a href="/" className="alink">Portfolio</a>    
                 </p>
-                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer mr4">
-                    <a href="" class="alink">Contact</a>
+                <p className="ma4 ml2">
+                    <a href="/" className="alink">Contact</a>
                 </p>
-                <p className="f3 pa2 link bg-animate hover-bg-lightest-blue pointer mr4">
+                <p className="ma4 ml2">
                    (links)
                 </p>
             </div>            
