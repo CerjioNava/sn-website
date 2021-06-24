@@ -1,40 +1,60 @@
 import React, { useRef } from 'react';
-import { OrbitControls } from '@react-three/drei';
+import { MapControls, Box, Sphere } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 import Kirbo from '../Kirbo/Kirbo';
-// import Ak47comp from '../Ak47comp/Ak47comp';
 
 
-const Spin = () => {
-    const mesh1 = useRef(null);
-    var move = 0.02;
+const SpinningBox = ({ position, args, color, speed, rot, minmax }) => {
+    const ref = useRef(null);
+    let moveSpeed = speed;          // Velocidad del movimiento
+    const [min, max] = minmax;      // Rango de movimiento
+    const posY = position[1];       // posición en Y
     
     useFrame(() => {
-
-        if  (mesh1.current.position.y < -1 || mesh1.current.position.y > 1) {
-            move *= -1;
+        if  (ref.current.position.y < posY-min || ref.current.position.y > posY+max) {
+            moveSpeed *= -1;
         }
-        mesh1.current.rotation.y += 0.005;        
-        mesh1.current.position.y -= move;
-        
+        ref.current.rotation.x = ref.current.rotation.y += rot;        
+        ref.current.position.y -= moveSpeed;        
     });    
 
     return (
         <>
-        <mesh ref={mesh1} position={[10, 0, 0]} >
-            <Kirbo />
+        <mesh ref={ref} position={position} castShadow>
+            <Box args={args}>
+                <meshStandardMaterial attach='material' color={color} />
+            </Box>            
+            {/* <Kirbo /> */}
         </mesh>        
         </>
     )
 }
 
+
+
 const Fun = () => {
 
     return (
         <>
-            <Spin />
-            <OrbitControls />
+            <SpinningBox 
+                position={[10, 0, -15]} 
+                args={[3, 3, 3]} 
+                color='cornflowerblue' 
+                speed={0.03}
+                rot={0.02} 
+                minmax={[1, 2]} 
+            />
+            <SpinningBox 
+                position={[-15, -15, -30]} 
+                args={[4, 4, 4]} 
+                color='yellow' 
+                speed={0.02} 
+                rot={-0.015} 
+                minmax={[3, 3]} 
+            />            
+            <MapControls />
+            
         </>
     )
 }

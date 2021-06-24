@@ -19,10 +19,11 @@ const Introduction = () => {
                 <h1>Hello there! I'm <br/>
                     <span>Sergio Nava</span>
                 </h1>
-                <p className="f2 b">
-                    I'm a Web Developer and self-taught Videogame Developer <br/>
-                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
-                    AQUI VA LA INTRODUCCIÓN TURURURURURURURURURURU <br/>
+                <p className="f2">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     
                 </p>
             </div>

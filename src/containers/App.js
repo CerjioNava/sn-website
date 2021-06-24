@@ -27,7 +27,8 @@ function App() {
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
       <Navigation />      
       <CanvasAll />
-      {/* <Home /> */}
+      <Home />
+      <Home />
     </div>     
   );
 }

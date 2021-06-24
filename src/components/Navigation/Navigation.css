@@ -1,6 +1,7 @@
 .alink {
     text-decoration: none;
-    color: black;       
+    color: black;
+    font-size: 0.9em;       
 }
 
 .alink:hover {

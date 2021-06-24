@@ -9,11 +9,11 @@ const Navigation = () => {
         <nav className="flex justify-between pa4 f4" >            
             <div>
                 <p className="ma4 b f3">
-                    <a href="/" className="alink">SERGIO NAVA</a>
+                    <a href="/" className="alink">DEV.</a>
                 </p>
             </div>
 
-            <div className="flex mr2">
+            <div className="flex mr2 f4">
                 <p className="ma4 ml2">
                     <a href="/" className="alink">Home</a>
                 </p>
