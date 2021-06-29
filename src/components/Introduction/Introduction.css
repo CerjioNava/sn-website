@@ -1,7 +1,15 @@
 
+@font-face {
+    font-family: name;
+    src: url(../../fonts/Mitr-Medium.ttf);    
+  }
+
 span {
-    font-size:3em;
-    color: navy;
+    font-size:7rem;
+    /* font-size:4em; */
+    font-family: name;
+    /* font-weight: bold; */
+    color: blueviolet;
 }
 
 .intro {

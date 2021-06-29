@@ -7,8 +7,10 @@ import CanvasAll from '../components/CanvasAll/CanvasAll.js'
 // HOME
 import Introduction from '../components/Introduction/Introduction';
 import Skills from '../components/Skills/Skills';
-
+// STYLE
 import './App.css';
+
+
 
 const Home = () => {
   return (   
@@ -23,7 +25,7 @@ const Home = () => {
 function App() {
 
   return (      
-    <div>
+    <div >
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
       <Navigation />      
       <CanvasAll />

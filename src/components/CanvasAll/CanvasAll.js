@@ -1,28 +1,28 @@
-import React, { Suspense, useEffect, useRef } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import Fun from '../Fun/Fun';
 import './CanvasAll.css';
-import { PerspectiveCamera } from '@react-three/drei';
-import * as THREE from 'three'
 
 
 const CanvasAll = () => {
-
-  const cameraRef = useRef(null);
-
+  
   useEffect(() => {
     document.getElementById('canva').style.position = 'fixed';  
     console.log(window.pageYOffset);  
   })
 
   function CameraMovement() {
-    const { camera } = useThree()    
+    const { camera } = useThree();    
     camera.position.setZ(1);
-
+    
     return useFrame(() => {
-      camera.position.setY(window.pageYOffset/1000)
-      // camera.translateY(window.pageYOffset/1000)
-      // console.log(camera.position)      
+      let posY = -window.pageYOffset/100;
+            
+      camera.position.setY(posY);
+      camera.rotation.x = 0;
+
+      // camera. position.set(0, posY, 1);      
+      // console.log(camera.position, camera.rotation);      
     })
   }  
 
@@ -31,7 +31,7 @@ const CanvasAll = () => {
       id='canva'
       colorManagment
       concurrent
-      camera={{ fov: 70 }}
+      camera={{fov: 60, near:0.5, far:3000 }}      
     >
       <ambientLight intensity={1.5} />
       <directionalLight 

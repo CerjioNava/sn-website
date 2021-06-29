@@ -17,3 +17,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: SCP-r;
+  /* src: url(fonts/ConcertOne-Regular.ttf); */
+  /* src: url(fonts/FredokaOne-Regular.ttf);   */
+  /* src: url(fonts/SourceCodePro-Light.ttf); */
+  /* src: url(fonts/SourceCodePro-Medium.ttf); */
+  src: url(fonts/SourceCodePro-Regular.ttf);  
+}
+
+* {
+  font-family: SCP-r;
+}

@@ -9,10 +9,10 @@ import './Skills.css';
 const showLogo = (logo, name) => {
     return (
         <div className="mh4">
-                <Tilt className="Tilt br-pill shadow-2 logo bg-black" options={{ max: 40 }} >
+                <Tilt className="Tilt br-pill shadow-2 bg-black logo" options={{ max: 40 }} >
                     <img alt="logo" src={logo} className="shadow-2 br-pill" />
                 </Tilt>
-                <h1>{name}</h1>
+                <h2>{name}</h2>
         </div>
     )
 }
@@ -28,8 +28,8 @@ const Skills = () => {
             <div className="flex justify-center pa3">
                 {showLogo(reactLogo, 'React')}
                 {showLogo(nodeLogo, 'Node')}
-                {showLogo(pythonLogo, 'Python')}
                 {showLogo(unityLogo, 'Unity')}
+                {showLogo(pythonLogo, 'Python')}                
             </div>
 
         </div>

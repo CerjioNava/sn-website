@@ -15,16 +15,13 @@ const Introduction = () => {
                 </Tilt>
             </div> */}
             
-            <div className="intro center f4">
+            <div className="intro center f5">
                 <h1>Hello there! I'm <br/>
                     <span>Sergio Nava</span>
                 </h1>
                 <p className="f2">
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    
+                    <br/>                    
                 </p>
             </div>
 
