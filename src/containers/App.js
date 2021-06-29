@@ -27,10 +27,10 @@ function App() {
   return (      
     <div >
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
-      <Navigation />      
+      <Navigation />            
+      <Home />
+      {/* <Home /> */}
       <CanvasAll />
-      <Home />
-      <Home />
     </div>     
   );
 }

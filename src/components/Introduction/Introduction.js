@@ -7,7 +7,7 @@ const Introduction = () => {
 
     return (
         
-        <div style={{ display: "flex" }} className="mh5 mv5">
+        <div style={{ display: "flex" }} className="pa4">
             
             {/* <div className="fl w-50 justify-center flex">
                 <Tilt className="Tilt shadow-2 br-pill image" options={{ max: 0 }} >
@@ -19,9 +19,12 @@ const Introduction = () => {
                 <h1>Hello there! I'm <br/>
                     <span>Sergio Nava</span>
                 </h1>
-                <p className="f2">
+                <p className="f3">
+                    Take a look, be my guest!
                     <br/>
-                    <br/>                    
+                    <br/>
+                    <br/>
+                    <br/>
                 </p>
             </div>
 
@@ -34,3 +37,4 @@ const Introduction = () => {
 }
 
 export default Introduction;
+

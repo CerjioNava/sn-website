@@ -25,8 +25,7 @@ const SpinningBox = ({ position, args, color, speed, rot, minmax }) => {
         <mesh ref={ref} position={position} castShadow>
             <Box args={args}>
                 <meshStandardMaterial attach='material' color={color} />
-            </Box>            
-            {/* <Kirbo /> */}
+            </Box>           
         </mesh>        
         </>
     )
@@ -42,8 +41,8 @@ const Fun = () => {
                 position={[10, 0, -15]} 
                 args={[3, 3, 3]} 
                 color='cornflowerblue' 
-                speed={0.0}
-                rot={0.03} 
+                speed={0.015}
+                rot={0.025} 
                 minmax={[1, 2]} 
             />
             <SpinningBox 
@@ -54,16 +53,25 @@ const Fun = () => {
                 rot={-0.015} 
                 minmax={[3, 3]} 
             />
-            <Box position={[0, -1, -25]}  />  
+            <SpinningBox 
+                position={[-20, 12, -45]} 
+                args={[4, 4, 4]} 
+                color='cyan' 
+                speed={0.03} 
+                rot={-0.02} 
+                minmax={[4, 4]} 
+            />
 
-            <mesh 
+
+            {/* <Box position={[0, -1, -25]}  />   */}
+            {/* <mesh 
                 receiveShadow
                 rotation={[-Math.PI / 2, 0, 0]} 
                 position={[0, -15, -30]}
             >
                 <Plane args={[20, 20]} />
                 <meshStandardMaterial attach='material' color='orange' />
-            </mesh>          
+            </mesh>           */}
             <OrbitControls />
             
         </>

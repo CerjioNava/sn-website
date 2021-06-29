@@ -9,8 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url('./media/background2.png');
   background-size: contain; */
-  /* background: linear-gradient(to right, rgb(100, 130, 235), rgb(0, 235, 255));  */
-  background: azure;  
+  /* background: linear-gradient(to right, rgb(100, 130, 235), rgb(0, 235, 255));  */     
+  background: azure; 
 }
 
 code {

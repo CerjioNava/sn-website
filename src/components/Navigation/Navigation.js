@@ -1,15 +1,18 @@
 import React from 'react';
 import './Navigation.css';
+import linkedinLogo from '../../media/Logos/linkedin.png';
+import instagramLogo from '../../media/Logos/instagram.png';
+// import twitterLogo from '../../media/Logos/twitter2.png';
+import githubLogo from '../../media/Logos/github2.png';
 
-// bb bw2 b--light-blue
 
 const Navigation = () => {
 
     return (
         <nav className="flex justify-between pa4 f4" >            
-            <div>
-                <p className="ma4 b f3">
-                    <a href="/" className="alink">DEV.</a>
+            <div className='flex items-center ml4 mb1'>
+                <p className=" b f3">
+                    <a href="/" className="alink">SERGIO.</a>
                 </p>
             </div>
 
@@ -26,9 +29,13 @@ const Navigation = () => {
                 <p className="ma4 ml2">
                     <a href="/" className="alink">Contact</a>
                 </p>
-                <p className="ma4 ml2">
-                   (links)
-                </p>
+
+                <div className='flex items-center mb2'>                    
+                    <img alt="logo" src={instagramLogo} className='pa2 icon' />
+                    <img alt="logo" src={githubLogo} className='pa2 icon' />                    
+                    <img alt="logo" src={linkedinLogo} className='pa2 icon' />
+                    {/* <img alt="logo" src={twitterLogo} className='pa2 icon' /> */}
+                </div>
             </div>            
         </nav>
     )
