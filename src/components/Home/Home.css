@@ -1,29 +1,50 @@
 
 @font-face {
-    font-family: name;
+    font-family: myName;
     src: url(../../fonts/Mitr-Medium.ttf);        
 }
 
 span {
-    font-size:7rem;
-    /* font-size:4em; */
-    font-family: name;
-    /* font-weight: bold; */
+    font-size: 7rem;
+    font-family: myName;    
     color: blueviolet;
 }
 
 .intro {
-    display: "flex"; 
-    flex-direction:"column"; 
-    justify-content:"center";
+    display: flex; 
+    width: 100vw;
+    height: 70vh;    
+    align-items: center;
+    justify-content: center;
 }
 
-image {
-    height: 400;
-    width: 400 
+.skills {
+    display: block; 
+    width: 100vw;
+    height: 80vh; 
+    align-items: center;
 }
 
 .logo {
     height: 110px;
     width: 110px;
+}
+
+button {
+    transition: 0.2s ease-in-out;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 100px;
+    color: azure;
+    font-weight: bold;
+    padding: 1em 2em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1px;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #3e8b40;
+    cursor: pointer;
 }

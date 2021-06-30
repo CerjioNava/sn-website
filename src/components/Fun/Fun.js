@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { OrbitControls, Box, Plane } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
+
 // import Kirbo from '../Kirbo/Kirbo';
 // import Kirby from '../Kirby/Kirby';
 
@@ -41,7 +42,7 @@ const Fun = () => {
             <SpinningBox 
                 position={[10, 0, -15]} 
                 args={[3, 3, 3]} 
-                color='cornflowerblue' 
+                color='royalblue' 
                 speed={0.015}
                 rot={0.025} 
                 minmax={[1, 2]} 
@@ -57,7 +58,7 @@ const Fun = () => {
             <SpinningBox 
                 position={[-20, 12, -45]} 
                 args={[4, 4, 4]} 
-                color='cyan' 
+                color='cornflowerblue' 
                 speed={0.03} 
                 rot={-0.02} 
                 minmax={[4, 4]} 

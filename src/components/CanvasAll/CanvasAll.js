@@ -9,7 +9,7 @@ const CanvasAll = () => {
   
   useEffect(() => {
     document.getElementById('canva').style.position = 'fixed';  
-    console.log(window.pageYOffset);  
+    // console.log(window.pageYOffset);  
   })
 
   function CameraMovement() {
