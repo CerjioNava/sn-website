@@ -22,3 +22,8 @@ image {
     height: 400;
     width: 400 
 }
+
+.logo {
+    height: 110px;
+    width: 110px;
+}

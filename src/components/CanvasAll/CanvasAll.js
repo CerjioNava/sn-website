@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import Fun from '../Fun/Fun';
 import './CanvasAll.css';
 
+// -------------------------------------------------------------------------------------------
 
 const CanvasAll = () => {
   

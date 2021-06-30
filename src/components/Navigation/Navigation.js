@@ -5,6 +5,23 @@ import instagramLogo from '../../media/Logos/instagram.png';
 // import twitterLogo from '../../media/Logos/twitter2.png';
 import githubLogo from '../../media/Logos/github2.png';
 
+// -------------------------------------------------------------------------------------------
+
+const logoNav = () => {
+    return (
+        <div className='flex items-center'>
+            <a href={"https://github.com/CerjioNava"} >
+                <img alt="logo" src={githubLogo} className='icon' />
+            </a>
+            <a href={"https://www.instagram.com/cerjionava/"} >
+                <img alt="logo" src={instagramLogo} className='icon' />
+            </a>                    
+            <a href={"https://www.linkedin.com/in/sergio-j-nava-g/"} >
+                <img alt="logo" src={linkedinLogo} className='icon' />
+            </a>                    
+        </div>       
+    )
+}
 
 const Navigation = () => {
 
@@ -30,12 +47,7 @@ const Navigation = () => {
                     <a href="/" className="alink">Contact</a>
                 </p>
 
-                <div className='flex items-center mb2'>                    
-                    <img alt="logo" src={instagramLogo} className='pa2 icon' />
-                    <img alt="logo" src={githubLogo} className='pa2 icon' />                    
-                    <img alt="logo" src={linkedinLogo} className='pa2 icon' />
-                    {/* <img alt="logo" src={twitterLogo} className='pa2 icon' /> */}
-                </div>
+                {logoNav()}
             </div>            
         </nav>
     )

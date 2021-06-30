@@ -3,23 +3,24 @@ import React from 'react';
 import { Helmet } from 'react-helmet';          // Para el título y evitar usar hooks para un titulo
 
 import Navigation from '../components/Navigation/Navigation';
-import CanvasAll from '../components/CanvasAll/CanvasAll.js'
+import CanvasAll from '../components/CanvasAll/CanvasAll';
 // HOME
-import Introduction from '../components/Introduction/Introduction';
-import Skills from '../components/Skills/Skills';
+import Home from '../components/Home/Home';
+// import Introduction from '../components/Introduction/Introduction';
+// import Skills from '../components/Skills/Skills';
 // STYLE
 import './App.css';
 
 
 
-const Home = () => {
-  return (   
-    <div className="tc">      
-      <Introduction />
-      <Skills />
-    </div>   
-  )
-}
+// const Home = () => {
+//   return (   
+//     <div className="tc">      
+//       <Introduction />
+//       <Skills />
+//     </div>   
+//   )
+// }
 
 
 function App() {
@@ -29,7 +30,6 @@ function App() {
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
       <Navigation />            
       <Home />
-      {/* <Home /> */}
       <CanvasAll />
     </div>     
   );

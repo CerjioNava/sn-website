@@ -1,10 +1,12 @@
 import React from 'react';
 import Tilt from 'react-tilt';
+
 import reactLogo from '../../media/Logos/react.png';
 import pythonLogo from '../../media/Logos/python.png';
 import unityLogo from '../../media/Logos/unity.png';
 import nodeLogo from '../../media/Logos/node.png';
-import './Skills.css';
+
+import './Home.css';
 
 const showLogo = (logo, name) => {
     return (
@@ -37,4 +39,28 @@ const Skills = () => {
 
 }
 
-export default Skills;
+const Home = () => {
+
+    return (
+        <>   
+            <div style={{ display: "flex" }} className="pa4 tc">                        
+                <div className="intro center f5">
+                    <h1>Hello there! I'm <br/>
+                        <span>Sergio Nava</span>
+                    </h1>
+                    <p className="f3">
+                        Take a look, be my guest!
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </p>
+                </div>               
+            </div>
+            {Skills()}
+        </>
+    )
+}
+
+export default Home;
+

@@ -5,6 +5,7 @@ import { useFrame } from '@react-three/fiber';
 // import Kirbo from '../Kirbo/Kirbo';
 // import Kirby from '../Kirby/Kirby';
 
+// -------------------------------------------------------------------------------------------
 
 const SpinningBox = ({ position, args, color, speed, rot, minmax }) => {
     const ref = useRef(null);

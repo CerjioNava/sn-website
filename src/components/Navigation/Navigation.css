@@ -11,5 +11,9 @@
 
 .icon {
     height: 24px;
-    fill: black;
+    padding: 0.4em;    
+}
+
+.icon:hover {
+    cursor: pointer;
 }
