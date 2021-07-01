@@ -63,7 +63,14 @@ const Fun = () => {
                 rot={-0.02} 
                 minmax={[4, 4]} 
             />
-
+            <SpinningBox 
+                position={[20, -22, -35]} 
+                args={[4, 4, 4]} 
+                color='crimson' 
+                speed={0.035} 
+                rot={0.025} 
+                minmax={[5, 5]} 
+            />
 
             {/* <Box position={[0, -1, -25]}  />   */}
             {/* <mesh 

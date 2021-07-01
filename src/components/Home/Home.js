@@ -69,13 +69,25 @@ const About = () => {
 const Portfolio = () => {
     return (
         <div className='portfo'>
-
+            <div className='portfo-box'>
+                <div className='pa2'>
+                    <h1 className=''>
+                        PROJECTS
+                    </h1>
+                    <div className='projects'>
+                        
+                    </div>
+                    <button>
+                        Read more
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }
 
+// THIS IS WHAT WE RETURN
 const Home = () => {
-
     return (
         <>  
             <div className="intro f5">
