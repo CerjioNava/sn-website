@@ -1,0 +1,125 @@
+
+/*FONT MYNAME PARA TITULO*/
+@font-face {
+    font-family: myName;
+    src: url(../../fonts/Mitr-Medium.ttf);
+}
+/*FONT SKILLS PARA SECCION DE SKILLS*/
+@font-face {
+    font-family: about;
+    src: url(../../fonts/Mitr-Medium.ttf);
+}
+
+// BUTTON 
+button {
+    transition: 0.2s ease-in-out;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 100px;
+    color: azure;
+    font-weight: bold;
+    padding: 1em 2em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1px;
+    outline: none;
+}    
+button:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #3e8b40;
+    cursor: pointer;
+}
+
+// INTRO
+.intro {
+    display: flex; 
+    width: 100vw;
+    height: 80vh;    
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+    text-align: center;
+    // MY NAME
+    span {
+        font-size: 7rem;
+        font-family: myName;    
+        color: blueviolet;
+    }    
+}
+
+// ABOUT
+.about {
+    display: flex; 
+    width: 100vw;
+    height: 70vh; 
+    align-items: center;
+    justify-content: center;    
+    background: rgba(0, 38, 56, 0.35);
+    color: white;
+    // ABOUT ME
+    .aboutme {
+        display: flex; 
+        flex-direction: column; 
+        height: 50vh;
+        width: 40vw;        
+        align-items: center;
+        justify-content: start;
+        padding: 1em;
+        h1 {
+            font-family: about;
+            font-size: 3em;
+            text-align: center;
+            margin: 0;
+        }
+        p {
+            // font-size: 1em;
+            text-align: center;
+            padding: 2em;        
+        }
+    }
+    // SKILLS
+    .skills {
+        display: flex; 
+        flex-direction: column;
+        height: 50vh;     
+        width: 45vw;
+        text-align: center;
+        .logo {
+            height: 6em;
+            width: 6em;
+            border-radius: 100%;
+            background: black;        
+            opacity: 0.6;
+            .skillName {     
+                text-align: center; 
+                opacity: 0;
+            }
+        }    
+        .logo:hover {
+            transition: 0.25s ease-in-out;
+            opacity: 1;
+            cursor: pointer;
+            .skillName {
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-family: about;        
+            // color: rgb(70, 0, 0);
+            font-size: 2.2em;
+        }
+    }
+}
+
+// PORTFOLIO SECTION
+.portfo {
+    display: flex; 
+    width: 100vw;
+    height: 70vh; 
+    align-items: center;
+    justify-content: center;    
+    // background: rgba(155, 155, 155, 0.35);
+    color: white;
+}
+
+

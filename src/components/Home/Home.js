@@ -1,43 +1,75 @@
 import React from 'react';
 import Tilt from 'react-tilt';
-import { useInView } from 'react-intersection-observer';
 
 import reactLogo from '../../media/Logos/react.png';
-import pythonLogo from '../../media/Logos/python.png';
-import unityLogo from '../../media/Logos/unity.png';
 import nodeLogo from '../../media/Logos/node.png';
+import threeLogo from '../../media/Logos/threejs.png';
+import unityLogo from '../../media/Logos/unity.png';
+import pythonLogo from '../../media/Logos/python.png';
+import postgreLogo from '../../media/Logos/postgresql.png';
 
-import Contact from '../Contact/Contact';
-import './Home.css';
+import './Home.scss';
 
 // -------------------------------------------------------------------------------------------
 
 const showLogo = (logo, name) => {
     return (
         <div className="ph4">
-                <Tilt className="Tilt br-pill shadow-2 bg-black logo" options={{ max: 30 }} >
+                <Tilt className="Tilt shadow-2 logo" options={{ max: 0 }} >
                     <img alt="logo" src={logo} className="shadow-2 br-pill" />
+                    <h4 className="skillName ma2">{name}</h4>
                 </Tilt>
-                <h2>{name}</h2>
         </div>
     )
 }
 
-const Skills = () => {
+// About Section
+const About = () => {
     return (
-        <div className='skills '>
-            <div>
-                <h1 className="f2 o-90">
-                    Main Skills
+        <div className='about'>
+            <div className='aboutme'>
+                <h1>
+                    About me 
+                </h1>
+                <p> 
+                    Since I was a child I've been a huge fan of technology and video games,
+                    now I'm a Web Developer and I love creating video games as a hobby too!
+                    <br/>
+                    <br/>
+                    But there is no end point to keep learning and improving, and that's what 
+                    I do best.
+                </p>
+                <a href="/">
+                    <button>
+                        Read more
+                    </button>
+                </a>
+                
+            </div>
+            <div className='skills'>
+                <h1>
+                    Check out my skills!
                 </h1>
                 
-                <div className="flex justify-center pa3">
+                <div className="flex justify-center pa3 pb4">
                     {showLogo(reactLogo, 'React')}
-                    {showLogo(nodeLogo, 'Node')}
-                    {showLogo(unityLogo, 'Unity')}
-                    {showLogo(pythonLogo, 'Python')}                
+                    {showLogo(nodeLogo, 'Node')}                    
+                    {showLogo(threeLogo, 'Three.js')}                    
+                </div>
+                <div className="flex justify-center pa3 pb4">                    
+                    {showLogo(unityLogo, 'Unity')} 
+                    {showLogo(postgreLogo, 'SQL')}
+                    {showLogo(pythonLogo, 'Python')}
                 </div>
             </div>
+        </div>
+    )
+}
+
+const Portfolio = () => {
+    return (
+        <div className='portfo'>
+
         </div>
     )
 }
@@ -62,7 +94,8 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            {Skills()}            
+            {About()}
+            {Portfolio()}
         </>
     )
 }
