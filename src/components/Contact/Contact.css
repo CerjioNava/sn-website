@@ -1,0 +1,9 @@
+.contact {
+    display: flex;
+    height: 25vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(50, 50, 50, 0.4); */
+    /* color: white; */
+}

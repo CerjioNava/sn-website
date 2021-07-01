@@ -6,6 +6,7 @@ import Navigation from '../components/Navigation/Navigation';
 import CanvasAll from '../components/CanvasAll/CanvasAll';
 // HOME
 import Home from '../components/Home/Home';
+import Contact from '../components/Contact/Contact';
 // import Introduction from '../components/Introduction/Introduction';
 // import Skills from '../components/Skills/Skills';
 // STYLE
@@ -30,6 +31,7 @@ function App() {
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
       <Navigation />            
       <Home />
+      <Contact />
       <CanvasAll />
     </div>     
   );

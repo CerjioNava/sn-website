@@ -15,5 +15,9 @@
 }
 
 .icon:hover {
+    transition: 0.2s;
+    height: 1.2em;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
     cursor: pointer;
 }

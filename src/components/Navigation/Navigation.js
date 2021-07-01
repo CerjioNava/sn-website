@@ -2,7 +2,6 @@ import React from 'react';
 import './Navigation.css';
 import linkedinLogo from '../../media/Logos/linkedin.png';
 import instagramLogo from '../../media/Logos/instagram.png';
-// import twitterLogo from '../../media/Logos/twitter2.png';
 import githubLogo from '../../media/Logos/github2.png';
 
 // -------------------------------------------------------------------------------------------

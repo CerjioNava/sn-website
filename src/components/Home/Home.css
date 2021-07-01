@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: myName;
-    src: url(../../fonts/Mitr-Medium.ttf);        
+    src: url(../../fonts/Mitr-Medium.ttf);
 }
 
 span {
@@ -13,21 +13,28 @@ span {
 .intro {
     display: flex; 
     width: 100vw;
-    height: 70vh;    
+    height: 80vh;    
     align-items: center;
     justify-content: center;
+    padding-bottom: 20vh;
+    text-align: center;
 }
 
 .skills {
-    display: block; 
+    display: flex; 
     width: 100vw;
-    height: 80vh; 
+    height: 70vh; 
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2)
 }
 
 .logo {
-    height: 110px;
-    width: 110px;
+    /* height: 100px;
+    width: 100px; */
+    height: 7em;
+    width: 7em;
 }
 
 button {
@@ -41,6 +48,7 @@ button {
     text-align: center;
     display: inline-block;
     font-size: 1px;
+    outline: none;
 }
 
 button:hover {

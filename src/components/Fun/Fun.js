@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { OrbitControls, Box, Plane } from '@react-three/drei';
+import { Box } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 
@@ -74,7 +74,7 @@ const Fun = () => {
                 <Plane args={[20, 20]} />
                 <meshStandardMaterial attach='material' color='orange' />
             </mesh>           */}
-            <OrbitControls />
+            {/* <OrbitControls /> */}
             
         </>
     )
