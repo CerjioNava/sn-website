@@ -1,9 +1,0 @@
-.contact {
-    display: flex;
-    height: 25vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-}

@@ -1,0 +1,26 @@
+.contact {
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;    
+    .icons {
+        width: 2.2em;
+        height: 2.2em;
+        padding: 0.2em;
+        margin-top: 0.5em;
+        filter: invert(100%);
+        opacity: 0.75;
+    }
+    .icons:hover {
+        transition: 0.2s;
+        opacity: 1;
+    }
+    a {
+        padding: 1em;
+    }    
+}
+

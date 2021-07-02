@@ -2,7 +2,7 @@ import React from 'react';
 import './Navigation.css';
 import linkedinLogo from '../../media/Logos/linkedin.png';
 import instagramLogo from '../../media/Logos/instagram.png';
-import githubLogo from '../../media/Logos/github2.png';
+import githubLogo from '../../media/Logos/github.png';
 
 // -------------------------------------------------------------------------------------------
 
@@ -12,12 +12,12 @@ const logoNav = () => {
             <a href={"https://github.com/CerjioNava"} >
                 <img alt="logo" src={githubLogo} className='icon' />
             </a>
-            <a href={"https://www.instagram.com/cerjionava/"} >
-                <img alt="logo" src={instagramLogo} className='icon' />
-            </a>                    
             <a href={"https://www.linkedin.com/in/sergio-j-nava-g/"} >
                 <img alt="logo" src={linkedinLogo} className='icon' />
-            </a>                    
+            </a>
+            <a href={"https://www.instagram.com/cerjionava/"} >
+                <img alt="logo" src={instagramLogo} className='icon' />
+            </a>
         </div>       
     )
 }

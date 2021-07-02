@@ -77,9 +77,10 @@ const Portfolio = () => {
                     <div className='projects'>
                         
                     </div>
-                    <button>
+                    {/* LOS LINKS SERAN DIRECTAMENTE DE LA IMAGEN DE VIDEOGAMES Y WEB DEV */}
+                    {/* <button>
                         Read more
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>
