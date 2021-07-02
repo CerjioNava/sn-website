@@ -1,0 +1,30 @@
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.b-scroll {
+  position: fixed;
+  align-self: right;
+  right: 3em;
+  bottom: 3em;
+  padding: 0.5em;
+  border-radius: 20%;
+  img {
+    width: 2.5em;
+    height: 2.5em;
+  }  
+}
+.b-scroll:hover {
+  transition: 0.1s ease-in-out;
+  // background-color: skyblue;
+  filter: invert(75%);
+  padding: 0.3em;
+  img {
+    transition: 0.1s ease-in-out;
+    width: 3em;
+    height: 3em;
+  }
+  cursor: pointer;
+}

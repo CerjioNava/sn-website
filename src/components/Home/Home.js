@@ -1,12 +1,12 @@
 import React from 'react';
 import Tilt from 'react-tilt';
 
-import reactLogo from '../../media/Logos/react.png';
-import nodeLogo from '../../media/Logos/node.png';
-import threeLogo from '../../media/Logos/threejs.png';
-import unityLogo from '../../media/Logos/unity.png';
-import pythonLogo from '../../media/Logos/python.png';
-import postgreLogo from '../../media/Logos/postgresql.png';
+import reactLogo from '../../media/Skills/react.png';
+import nodeLogo from '../../media/Skills/node.png';
+import threeLogo from '../../media/Skills/threejs.png';
+import unityLogo from '../../media/Skills/unity.png';
+import pythonLogo from '../../media/Skills/python.png';
+import postgreLogo from '../../media/Skills/postgresql.png';
 
 import './Home.scss';
 

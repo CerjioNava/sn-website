@@ -1,8 +1,11 @@
 import React from 'react';
-import './Navigation.css';
+import { Link } from 'react-scroll';
+
 import linkedinLogo from '../../media/Logos/linkedin.png';
 import instagramLogo from '../../media/Logos/instagram.png';
 import githubLogo from '../../media/Logos/github.png';
+
+import './Navigation.css';
 
 // -------------------------------------------------------------------------------------------
 
@@ -43,7 +46,14 @@ const Navigation = () => {
                     <a href="/" className="alink">Portfolio</a>    
                 </p>
                 <p className="ma4 ml2">
-                    <a href="/" className="alink">Contact</a>
+                    <Link 
+                        to="contact" 
+                        smooth='easeInOutQuad' 
+                        duration={1750} 
+                        className="alink"
+                    >
+                        Contact
+                    </Link>
                 </p>
 
                 {logoNav()}

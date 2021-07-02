@@ -1,6 +1,7 @@
 import React from 'react';
 // import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';          // Para el título y evitar usar hooks para un titulo
+import { animateScroll } from 'react-scroll';
 
 // STATIC
 import Navigation from '../components/Navigation/Navigation';
@@ -11,16 +12,38 @@ import Contact from '../components/Contact/Contact';
 import Home from '../components/Home/Home';
 
 // STYLE
-import './App.css';
+import arrowUp from '../media/arrowup.png';
+import './App.scss';
+
+// -------------------------------------------------------------------------------------------
+
+const ButtonScroll = () => {
+
+  const scrollTop = () => {
+    animateScroll.scrollToTop({
+      duration: 1000,
+      smooth: 'easeInOutQuad'
+    })
+  }
+
+  return (
+    <div className='b-scroll'>
+      <div onClick={scrollTop}>
+        <img alt='scroll' src={arrowUp} />
+      </div>
+    </div>
+  )
+}
 
 
 function App() {
 
   return (      
-    <div >
+    <div className='main'>
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
-      <Navigation />            
-      <Home />
+      <Navigation />
+      <ButtonScroll />         
+      <Home />      
       <Contact />
       <CanvasAll />
     </div>     
