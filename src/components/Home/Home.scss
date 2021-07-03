@@ -13,9 +13,10 @@
 // BUTTON 
 button {
     transition: 0.2s ease-in-out;
-    background-color: #4CAF50;
+    background-color: #DFB430;
+    opacity: 0.75;
     border: none;
-    border-radius: 100px;
+    border-radius: 10px;
     color: azure;
     font-weight: bold;
     padding: 1em 2em;
@@ -26,7 +27,7 @@ button {
 }    
 button:hover {
     transition: 0.2s ease-in-out;
-    background-color: #3e8b40;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -42,8 +43,8 @@ button:hover {
     // MY NAME
     span {
         font-size: 7rem;
-        font-family: myName;    
-        color: blueviolet;
+        font-family: myName;         
+        color: #305bdf;
     }    
 }
 
@@ -126,7 +127,7 @@ button:hover {
         width: 90vw;
         height: 70vh;
         justify-content: center; 
-        background: rgba(180, 200, 255, 0.25);
+        background: rgba(79, 123, 255, 0.1);
         h1 {
             font-family: sectionTitle;
         }

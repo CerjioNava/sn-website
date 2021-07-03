@@ -11,6 +11,7 @@
   font-family: SCP-r;  
 }
 
+
 body {
   margin: 0;
   /* color: white; */
@@ -19,10 +20,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('./media/background2.png');
-  background-size: contain; */
-  /* background: linear-gradient(to right, rgb(100, 130, 235), rgb(0, 235, 255));  */     
+  -moz-osx-font-smoothing: grayscale;    
   background: azure; 
   overflow-x: hidden;
 }

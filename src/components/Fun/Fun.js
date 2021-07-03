@@ -39,36 +39,49 @@ const Fun = () => {
 
     return (
         <>
+            {/* Blue box RIGHT */}
             <SpinningBox 
                 position={[10, 0, -15]} 
                 args={[3, 3, 3]} 
-                color='royalblue' 
+                color='#4F7BFF' 
                 speed={0.015}
-                rot={0.025} 
+                rot={0.01} 
                 minmax={[1, 2]} 
             />
-            <SpinningBox 
-                position={[-15, -12, -25]} 
-                args={[4, 4, 4]} 
-                color='yellow' 
-                speed={0.02} 
-                rot={-0.015} 
-                minmax={[3, 3]} 
-            />
+            {/* Red box LEFT */}
             <SpinningBox 
                 position={[-20, 12, -45]} 
                 args={[4, 4, 4]} 
-                color='cornflowerblue' 
-                speed={0.03} 
+                color='#FF4F7B' 
+                speed={-0.02} 
                 rot={-0.02} 
                 minmax={[4, 4]} 
             />
+            {/* Yellow box LEFT */}
+            <SpinningBox 
+                position={[-15, -12, -25]} 
+                args={[4, 4, 4]} 
+                color='#7BFF4F' 
+                speed={0.03} 
+                rot={-0.02} 
+                minmax={[3, 3]} 
+            />
+            {/* Blue box LEFT */}
+            {/* <SpinningBox 
+                position={[-30, 0, -30]} 
+                args={[3, 3, 3]} 
+                color='#4F7BFF' 
+                speed={-0.015}
+                rot={0.01} 
+                minmax={[2, 3]} 
+            /> */}
+            {/* Red box RIGHT */}
             <SpinningBox 
                 position={[20, -22, -35]} 
                 args={[4, 4, 4]} 
-                color='crimson' 
-                speed={0.035} 
-                rot={0.025} 
+                color='#FF4F7B' 
+                speed={0.02} 
+                rot={0.02} 
                 minmax={[5, 5]} 
             />
 

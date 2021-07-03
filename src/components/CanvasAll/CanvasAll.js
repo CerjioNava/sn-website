@@ -18,21 +18,24 @@ const CanvasAll = () => {
     
     return useFrame(() => {
       let posY = -window.pageYOffset/100;
-            
+      let posZ = -3 + (1920-document.getElementById("canva").offsetWidth)/150;
+      // let posZ = -3;
+
       camera.position.setY(posY);
       camera.rotation.x = 0;
-
-      // camera. position.set(0, posY, 1);      
-      // console.log(camera.position, camera.rotation);      
+      
+      camera.position.setZ(posZ);
+      console.log(posZ, document.getElementById("canva").offsetWidth)
+      
     })
   }  
 
   return (
     <Canvas
-      id='canva'
       colorManagment
       concurrent
-      camera={{fov: 60, near:0.5, far:3000 }}      
+      camera={{fov: 60, near:0.5, far:3000 }}
+      id='canva'
     >
       <ambientLight intensity={1.5} />
       <directionalLight 
