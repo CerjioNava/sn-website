@@ -14,11 +14,11 @@ import './Home.scss';
 
 const showLogo = (logo, name) => {
     return (
-        <div className="ph4">
-                <Tilt className="Tilt shadow-2 logo" options={{ max: 0 }} >
-                    <img alt="logo" src={logo} className="shadow-2 br-pill" />
-                    <h4 className="skillName ma2">{name}</h4>
-                </Tilt>
+        <div className="grid-child">
+            <Tilt className="Tilt shadow-2 logo" options={{ max: 0 }} >
+                <img alt="logo" src={logo} className="shadow-2 br-pill" />
+                <h4 className="skillName">{name}</h4>
+            </Tilt>
         </div>
     )
 }
@@ -50,13 +50,10 @@ const About = () => {
                 <h1>
                     Check out my skills!
                 </h1>
-                
-                <div className="flex justify-center pa3 pb4">
+                <div className="grid-parent">
                     {showLogo(reactLogo, 'React')}
-                    {showLogo(nodeLogo, 'Node')}                    
-                    {showLogo(threeLogo, 'Three.js')}                    
-                </div>
-                <div className="flex justify-center pa3 pb4">                    
+                    {showLogo(nodeLogo, 'Node')}
+                    {showLogo(threeLogo, 'Three.js')}                
                     {showLogo(unityLogo, 'Unity')} 
                     {showLogo(postgreLogo, 'SQL')}
                     {showLogo(pythonLogo, 'Python')}
@@ -91,7 +88,7 @@ const Portfolio = () => {
 const Home = () => {
     return (
         <>  
-            <div className="intro f5">
+            <div className="intro">
                 <div>
                     <h1>
                         Hello there! I'm <br/>
@@ -102,7 +99,7 @@ const Home = () => {
                     </p>
                     <a href="/">
                         <button>
-                            My Portfolio
+                            <h4>My Portfolio</h4>
                         </button>
                     </a>
                 </div>

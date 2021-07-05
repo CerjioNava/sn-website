@@ -25,7 +25,7 @@ const CanvasAll = () => {
       camera.rotation.x = 0;
       
       camera.position.setZ(posZ);
-      console.log(posZ, document.getElementById("canva").offsetWidth)
+      // console.log(posZ, document.getElementById("canva").offsetWidth)
       
     })
   }  

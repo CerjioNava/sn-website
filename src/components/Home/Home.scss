@@ -19,11 +19,20 @@ button {
     border-radius: 10px;
     color: azure;
     font-weight: bold;
-    padding: 1em 2em;
+    // padding: 1em 2em;
+    
+    padding-left: clamp(0.75em, 1em, 2em);
+    padding-right: clamp(0.75em, 1em, 2em);
+    padding-top: clamp(0.75em, 0.8em, 1em);
+    padding-bottom: clamp(0.75em, 0.8em, 1em);
+
     text-align: center;
     display: inline-block;
-    font-size: 1px;
     outline: none;
+    h4 {
+        font-size: clamp(12px, 1.3vw, 16px);
+        margin: 0px;
+    }
 }    
 button:hover {
     transition: 0.2s ease-in-out;
@@ -41,11 +50,18 @@ button:hover {
     padding-bottom: 20vh;
     text-align: center;
     // MY NAME
-    span {
-        font-size: 7rem;
-        font-family: myName;         
-        color: #305bdf;
-    }    
+    h1 {
+        font-size: clamp(16px, 2.5vw, 30px);
+        span {
+            // font-size: 3.5em;
+            font-size: clamp(50px, 9vw, 110px);
+            font-family: myName;         
+            color: #305bdf;
+        }
+    }
+    p {
+        font-size: clamp(14px, 2vw, 24px);
+    }
 }
 
 // ABOUT
@@ -58,6 +74,7 @@ button:hover {
     background: rgba(0, 38, 56, 0.35);
     color: white;
     padding-top: 1em;
+    font-size: clamp(14px, 1.3vw, 16px);
     // ABOUT ME
     .aboutme {
         display: flex; 
@@ -74,7 +91,6 @@ button:hover {
             margin: 0;
         }
         p {
-            // font-size: 1em;
             text-align: center;
             padding: 2em;        
         }
@@ -83,29 +99,45 @@ button:hover {
     .skills {
         display: flex; 
         flex-direction: column;
-        height: 50vh;     
+        height: 50vh; 
         width: 45vw;
-        text-align: center;
-        .logo {
-            height: 6em;
-            width: 6em;
-            border-radius: 100%;
-            background: black;        
-            opacity: 0.65;
-            .skillName {     
-                text-align: center; 
-                opacity: 0;
-            }
-        }    
-        .logo:hover {
-            transition: 0.2s ease-in-out;
-            opacity: 1;
-            cursor: pointer;
-            .skillName {
-                transition: 0.25s ease-in-out;
-                opacity: 1;
+        text-align: center; 
+        .grid-parent {
+            display: grid;
+            height: fit-content;
+            justify-content: center;
+            align-items: space-evenly;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            padding: 2em;
+            .grid-child {
+                margin-right: 2em;
+                margin-left: 2em;
+                margin-bottom: 3em;
+                .logo {
+                    height: 6em;
+                    width: 6em;
+                    border-radius: 100%;
+                    background: black;        
+                    opacity: 0.65;
+                    .skillName {     
+                        text-align: center; 
+                        opacity: 0;
+                        margin-top: 0.5em;
+                    }
+                }    
+                .logo:hover {
+                    transition: 0.2s ease-in-out;
+                    opacity: 1;
+                    cursor: pointer;
+                    .skillName {
+                        transition: 0.25s ease-in-out;
+                        opacity: 1;
+                    }
+                }
             }
         }
+        
         h1 {
             font-family: sectionTitle;
             font-size: 2.2em;
@@ -138,6 +170,43 @@ button:hover {
             // background: rgba(180, 200, 255, 0.25);
             margin-top: 2em;
             margin-bottom: 2em;            
+        }
+    }
+}
+
+@media all and (orientation: portrait) {
+    
+    .about {
+        flex-direction: column;
+        height: fit-content;
+        .aboutme {
+            width: 80vw;
+            height: fit-content;
+            p {
+                padding: 1em;
+            }
+        }
+        .skills {
+            width: 80vw;
+            h1 {
+                margin-bottom: 1.2em;
+            }
+            .grid-parent {
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto;
+                padding: 0em;
+                .grid-child {
+                    margin-right: 1em;
+                    margin-left: 1em;
+                    .logo {
+                        height: 4em;
+                        width: 4em;
+                        h4 {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
         }
     }
 }
