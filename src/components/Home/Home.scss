@@ -74,7 +74,7 @@ button:hover {
     background: rgba(0, 38, 56, 0.35);
     color: white;
     padding-top: 1em;
-    font-size: clamp(14px, 1.3vw, 16px);
+    font-size: clamp(13px, 1.4vw, 16px);
     // ABOUT ME
     .aboutme {
         display: flex; 
@@ -199,8 +199,8 @@ button:hover {
                     margin-right: 1em;
                     margin-left: 1em;
                     .logo {
-                        height: 4em;
-                        width: 4em;
+                        height: 5.5em;
+                        width: 5.5em;
                         h4 {
                             font-size: 0.9em;
                         }

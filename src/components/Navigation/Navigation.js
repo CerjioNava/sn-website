@@ -4,14 +4,15 @@ import { Link } from 'react-scroll';
 import linkedinLogo from '../../media/Logos/linkedin.png';
 import instagramLogo from '../../media/Logos/instagram.png';
 import githubLogo from '../../media/Logos/github.png';
+import menuLogo from '../../media/Logos/menu.png'
 
-import './Navigation.css';
+import './Navigation.scss';
 
 // -------------------------------------------------------------------------------------------
 
 const logoNav = () => {
     return (
-        <div className='flex items-center'>
+        <div className='logoNav'>
             <a href={"https://github.com/CerjioNava"} >
                 <img alt="logo" src={githubLogo} className='icon' />
             </a>
@@ -28,36 +29,41 @@ const logoNav = () => {
 const Navigation = () => {
 
     return (
-        <nav className="flex justify-between pa4 f4" >            
-            <div className='flex items-center ml4 mb1'>
-                <p className=" b f3">
+        <nav className="header" >            
+            <div className='flex items-center ml4 mb1 justify-between'>
+                <p className="b f3">
                     <a href="/" className="alink">SERGIO.</a>
                 </p>
+                <div className='menu'>
+                    <img alt='menu' src={menuLogo}/>
+                </div>
             </div>
 
-            <div className="flex mr2 f4">
-                <p className="ma4 ml2">
-                    <a href="/" className="alink">Home</a>
-                </p>
-                <p className="ma4 ml2">
-                    <a href="/" className="alink">About</a>
-                </p>
-                <p className="ma4 ml2">
-                    <a href="/" className="alink">Portfolio</a>    
-                </p>
-                <p className="ma4 ml2">
-                    <Link 
-                        to="contact" 
-                        smooth='easeInOutQuad' 
-                        duration={1750} 
-                        className="alink"
-                    >
-                        Contact
-                    </Link>
-                </p>
-
-                {logoNav()}
-            </div>            
+            <div className='flex justify-end'>
+                <div className="header-menu">
+                    <p className="ma4 ml2">
+                        <a href="/" className="alink">Home</a>
+                    </p>
+                    <p className="ma4 ml2">
+                        <a href="/" className="alink">About</a>
+                    </p>
+                    <p className="ma4 ml2">
+                        <a href="/" className="alink">Portfolio</a>    
+                    </p>
+                    <p className="ma4 ml2">
+                        <Link 
+                            to="contact" 
+                            smooth='easeInOutQuad' 
+                            duration={1750} 
+                            className="alink"
+                        >
+                            Contact
+                        </Link>
+                    </p>
+                
+                    {logoNav()}
+                </div>            
+            </div>
         </nav>
     )
 
