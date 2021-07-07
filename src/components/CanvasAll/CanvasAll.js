@@ -16,16 +16,24 @@ const CanvasAll = () => {
     const { camera } = useThree();    
     camera.position.setZ(1);
     
+    let posY = 0;
+    let posZ = 0;
+    
     return useFrame(() => {
-      let posY = -window.pageYOffset/100;
-      let posZ = -3 + (1920-document.getElementById("canva").offsetWidth)/150;
-      // let posZ = -3;
+      
+      if (document.getElementById('canva').clientWidth < 580) {
+        posZ = 25;
+        posY = -window.pageYOffset/50 - 5;
+      } else {
+        posY = -window.pageYOffset/100;
+        posZ = -3 + (1920-document.getElementById("canva").offsetWidth)/150;
+      }
 
       camera.position.setY(posY);
       camera.rotation.x = 0;
-      
       camera.position.setZ(posZ);
-      // console.log(posZ, document.getElementById("canva").offsetWidth)
+      // console.log(document.getElementById('canva').clientWidth)
+      // console.log(document.getElementById("canva").offsetHeight, document.getElementById("canva").offsetWidth);
       
     })
   }  

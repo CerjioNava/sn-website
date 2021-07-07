@@ -25,11 +25,10 @@
     }    
 }
 
-@media all and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (max-width: 580px)  {
     #contact {
         flex-direction: column;
         height: 60%;
-        font-size: 90%;
+        font-size: 14px;
     }
-
 }

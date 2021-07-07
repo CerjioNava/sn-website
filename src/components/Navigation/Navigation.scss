@@ -50,7 +50,7 @@
     }
 }
 
-@media all and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (max-width: 580px) {
     .header {
         flex-direction: column;
         filter: invert(100);
@@ -78,7 +78,7 @@
         }
         .menu {
             display: inline;
-            margin-right: 2.5em;
+            margin-right: 1.5em;
         }
         
         .alink:hover {

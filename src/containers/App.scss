@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-@media all and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (max-width: 580px) {
   .b-scroll {
     right: 2em;
     bottom: 2em;
