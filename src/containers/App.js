@@ -1,5 +1,4 @@
-import React from 'react';
-// import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';          // Para el título y evitar usar hooks para un titulo
 import { animateScroll } from 'react-scroll';
 
@@ -35,13 +34,19 @@ const ButtonScroll = () => {
   )
 }
 
-
 function App() {
+  
+  const [menu, setMenu] = useState(false);
+
+  const showMenu = (event) => {
+    setMenu(!menu);
+    console.log(menu);
+  }
 
   return (      
     <div className='main'>
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
-      <Navigation />
+      <Navigation menu={menu} showMenu={() => showMenu} />
       <ButtonScroll />         
       <Home />      
       <Contact />

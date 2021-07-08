@@ -26,7 +26,16 @@ const logoNav = () => {
     )
 }
 
-const Navigation = () => {
+const Navigation = ({ menu, showMenu }) => {
+
+    const isMenu = (menu) => {
+        if (!menu)
+            document.getElementById('header-menu').style.display='none';
+        else 
+            document.getElementById('header-menu').style.display='flex';
+        console.log(showMenu);
+        console.log(menu);
+    }
 
     return (
         <nav className="header" >            
@@ -34,13 +43,13 @@ const Navigation = () => {
                 <p className="b f3">
                     <a href="/" className="alink">SERGIO.</a>
                 </p>
-                <div className='menu'>
+                <div className='menu' onClick={isMenu}>
                     <img alt='menu' src={menuLogo}/>
                 </div>
             </div>
 
             <div className='flex justify-end'>
-                <div className="header-menu">
+                <div id="header-menu">
                     <p className="ma4 ml2">
                         <a href="/" className="alink">Home</a>
                     </p>

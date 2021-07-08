@@ -14,7 +14,7 @@
         opacity: 1;
         cursor: pointer;
     }
-    .header-menu {
+    #header-menu {
         display: flex;
         margin-right: 1.5em;
         .logoNav {
@@ -57,7 +57,7 @@
         background: rgba(255, 217, 199, 0.35);
         padding: 0em;
         font-weight: bold;
-        .header-menu {
+        #header-menu {
             // display: none;
             flex-direction: column;
             text-align: center;
