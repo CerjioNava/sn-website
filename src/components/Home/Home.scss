@@ -194,6 +194,8 @@ button:active {
                 font-family: sectionTitle;
                 font-size: 2.25em;
                 margin: 0em;
+                // width: fit-content;
+                // text-align: center;
             }
             a {
                 margin-top: 2em;
@@ -209,6 +211,7 @@ button:active {
                     display: flex;
                     position: relative;
                     height: auto;
+                    margin-left: 1em;
                     text-align: center;
                     width: clamp(250px, 35%, 350px);
                     .description {
@@ -236,6 +239,7 @@ button:active {
                 .content {
                     width: 60%;
                     text-align: center;
+                    padding-left: 1em;
                     font-size: clamp(14px, 2vw, 24px);
                     p {
                         // font-size: 20px;
@@ -302,6 +306,7 @@ button:active {
                 // justify-content: space-between;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 padding: 2em 0em;
                 width: 100vw;
                 h1 {
@@ -311,7 +316,8 @@ button:active {
                 .projects {
                     flex-direction: column;
                     height: 100%;
-                    width: fit-content;
+                    width: 60vw;
+                    // width: fit-content;
                     .project-view {
                         margin: 1em;
                         // width: 200px;
@@ -320,9 +326,11 @@ button:active {
                             font-size: 14px;
                         }
                     }
-                    // .content {
-                        
-                    // }
+                    .content {
+                        margin-top: 1em;
+                        width: fit-content;   
+                        padding: 0em;
+                    }
                 }
                 a {
                     // margin-top: 1em;

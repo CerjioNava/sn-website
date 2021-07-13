@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Tilt from 'react-tilt';
 
 import reactLogo from '../../media/Skills/react.png';
@@ -66,41 +66,80 @@ const About = () => {
 // Portfolio Section
 const Portfolio = () => {
 
+    const [portfo, setPortfo] = useState(0);
+
+    const ChangePortfo = (num) => {
+        if (portfo < 2 && num==1 || portfo > 0 && num==-1) 
+            setPortfo(portfo+num);
+    }
+
+    useEffect(() => {
+        console.log(portfo)
+    })
+
     const Content = () => {
-        return (
-            <div className='projects'>
-                <div className='project-view'>
-                    <img src={portfo2} alt='Videogames' />
+        if (portfo === 0) {
+            return (
+                <div className='projects'>
+                    <div className='project-view'>
+                        <img src={portfo2} alt='Videogames' />
+                    </div>
+                    <div className='content'> 
+                        <h1> Check out some of my latest work! </h1>
+                        <p>
+                            <br/>
+                            There are also videogames, have fun!
+                        </p>
+                    </div>
                 </div>
-                <div className='content'> 
-                    <h1>
-                        {/* Have fun with my websites! */}
-                        Check out some of my latest work!
-                    </h1>
-                    <p>
-                        <br/>
-                        There are also videogames, have fun!
-                    </p>
+            )
+        } else if (portfo === 1) {
+            return (
+                <div className='projects'>
+                    <div className='project-view'>
+                        <img src={portfo3} alt='Videogames' />
+                    </div>
+                    <div className='content'> 
+                        <h1> Play my videogames! </h1>
+                        <p>
+                            <br/>
+                            TURURURURURU
+                        </p>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        } else 
+            return (
+                <div className='projects'>
+                    <div className='project-view'>
+                        <img src={portfo3} alt='Videogames' />
+                    </div>
+                    <div className='content'> 
+                        <h1> WEB DEV </h1>
+                        <p>
+                            <br/>
+                            COMING SOON...
+                        </p>
+                    </div>
+                </div>
+            )
+        
     }
 
     return (
         <div className='portfo'>
             <div className='portfo-box'>
                 <div className='arrow' style={{'transform': 'scaleX(-1)'}} >
-                    <img src={arrow} alt='Previous' />
+                    <img src={arrow} alt='Previous' onClick={() => ChangePortfo(-1)} />
                 </div>
                 <div className='portfo-content'>
-                    {/* <h1 > Projects </h1> */}
                     {Content()}
                     <a href="/">
                         <button> My Portfolio </button>
                     </a>
                 </div>
-                <div className='arrow'>
-                    <img src={arrow} alt='Previous' />
+                <div className='arrow' >
+                    <img src={arrow} alt='Previous' onClick={() => ChangePortfo(1)} />
                 </div>
             </div>
         </div>
@@ -109,6 +148,7 @@ const Portfolio = () => {
 
 // THIS IS WHAT WE RETURN
 const Home = () => {
+
     return (
         <>  
             <div className="intro">
