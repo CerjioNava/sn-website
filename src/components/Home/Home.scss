@@ -152,23 +152,65 @@ button:hover {
     align-items: center;
     justify-content: center; 
     text-align: center;   
+    font-size: clamp(13px, 1.4vw, 16px);
     // background: rgba(155, 155, 155, 0.35);
     .portfo-box {
         display: flex;
-        width: 90vw;
-        height: 70vh;
+        width: 90%;
+        height: 90%;
         justify-content: center; 
         background: rgba(79, 123, 255, 0.1);
-        h1 {
-            font-family: sectionTitle;
-        }
-        .projects {
+        .portfo-content {
             display: flex;
-            width: 75vw;
-            height: 45vh;
-            // background: rgba(180, 200, 255, 0.25);
-            margin-top: 2em;
-            margin-bottom: 2em;            
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 3em 0em;
+            h1 {
+                font-family: sectionTitle;
+                font-size: 2.25em;
+                margin: 0em;
+            }
+            .projects {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em 0em;
+                width: 75vw;
+                height: 45vh;
+                .project-section {
+                    display: flex;
+                    position: relative;
+                    width: 40%;
+                    height: auto;
+                    margin: 1em 3em;
+                    text-align: center;
+                    width: clamp(30%, 25vw, 40%);
+                    .description {
+                        position: absolute;
+                        // color: white;
+                        opacity: 0;
+                        font-size: clamp(12px, 1.5em, 32px);
+                        font-weight: bold;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    img {
+                        opacity: 1;
+                    }
+                }
+                .project-section:hover {
+                    img {
+                        transition: 0.2s ease-in-out;
+                        opacity: 0.35;
+                        cursor: pointer;
+                    }
+                    .description {
+                        transition: 0.2s ease-in-out;
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }
@@ -211,6 +253,28 @@ button:hover {
                 }
             }
         }
+    }
+    .portfo {
+        .portfo-box {
+            .portfo-content {
+                justify-content: space-between;
+                padding: 2em 0em;
+                h1 {
+                    margin-bottom: 0em;
+                }
+                .projects {
+                    flex-direction: column;
+                    .project-section {
+                        margin: 1em;
+                        width: 150px;
+                        .description {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
 

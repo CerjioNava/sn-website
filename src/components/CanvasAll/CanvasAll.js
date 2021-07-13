@@ -42,7 +42,7 @@ const CanvasAll = () => {
     <Canvas
       colorManagment
       concurrent
-      camera={{fov: 60, near:0.5, far:3000 }}
+      camera={{fov: 60, near: 0.5, far:3000 }}
       id='canva'
     >
       <ambientLight intensity={1.5} />

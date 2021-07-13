@@ -8,6 +8,10 @@ import unityLogo from '../../media/Skills/unity.png';
 import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
+import portfo1 from '../../media/Gallery/VG1.PNG';
+import portfo2 from '../../media/Gallery/Pixel1.gif';
+import portfo3 from '../../media/Gallery/Pixel3.gif';
+
 import './Home.scss';
 
 // -------------------------------------------------------------------------------------------
@@ -67,12 +71,32 @@ const Portfolio = () => {
     return (
         <div className='portfo'>
             <div className='portfo-box'>
-                <div className='pa2'>
-                    <h1 className=''>
-                        PROJECTS
+                <div className='portfo-content'>
+                    <h1 >
+                        Projects
                     </h1>
                     <div className='projects'>
-                        
+                        <div className='project-section'>
+                            <img src={portfo2} alt='Videogames' />
+                            <div className='description'>
+                                VIDEOGAMES
+                            </div>
+                        </div>
+                        <div className='project-section'>
+                            <img src={portfo3} alt='Web' />
+                            <div className='description'>
+                                WEB DEVELOPMENT
+                                <br/><br/>
+                                Coming soon...
+                            </div>
+                        </div>
+                    </div>
+                    <div className='mt2'>
+                        <a href="/">
+                            <button>
+                                Read more
+                            </button>
+                        </a>
                     </div>
                     {/* LOS LINKS SERAN DIRECTAMENTE DE LA IMAGEN DE VIDEOGAMES Y WEB DEV */}
                     {/* <button>

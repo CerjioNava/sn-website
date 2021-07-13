@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
 import linkedinLogo from '../../media/Logos/linkedin.png';
@@ -26,15 +26,18 @@ const logoNav = () => {
     )
 }
 
-const Navigation = ({ menu, showMenu }) => {
+const Navigation = () => {
 
-    const isMenu = (menu) => {
+    
+    const [menu, setMenu] = useState(true);    
+
+    const showMenu = () => {
+        setMenu(!menu);
+
         if (!menu)
             document.getElementById('header-menu').style.display='none';
-        else 
+        else  
             document.getElementById('header-menu').style.display='flex';
-        console.log(showMenu);
-        console.log(menu);
     }
 
     return (
@@ -43,7 +46,7 @@ const Navigation = ({ menu, showMenu }) => {
                 <p className="b f3">
                     <a href="/" className="alink">SERGIO.</a>
                 </p>
-                <div className='menu' onClick={isMenu}>
+                <div className='menu' onClick={showMenu}>
                     <img alt='menu' src={menuLogo}/>
                 </div>
             </div>
@@ -65,6 +68,7 @@ const Navigation = ({ menu, showMenu }) => {
                             smooth='easeInOutQuad' 
                             duration={1750} 
                             className="alink"
+                            onClick={showMenu}
                         >
                             Contact
                         </Link>

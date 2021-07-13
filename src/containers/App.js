@@ -35,20 +35,26 @@ const ButtonScroll = () => {
 }
 
 function App() {
-  
-  const [menu, setMenu] = useState(false);
 
-  const showMenu = (event) => {
-    setMenu(!menu);
-    console.log(menu);
+  const [route, setRoute] = useState('home');
+
+  const Page = () => {
+    console.log(route);
+    if (route === 'home')
+      return (<Home />)
+    // else if (route === 'about')
+    //   return (<About />)
+    // else
+    //   return (<Portfolio />)
   }
-
+  
   return (      
     <div className='main'>
       <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
-      <Navigation menu={menu} showMenu={() => showMenu} />
-      <ButtonScroll />         
-      <Home />      
+      <Navigation />
+      <ButtonScroll />
+      {Page()}
+      {/* <Home />       */}
       <Contact />
       <CanvasAll />
     </div>     
