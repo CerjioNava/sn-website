@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import linkedinLogo from '../../media/Logos/linkedin.png';
 import instagramLogo from '../../media/Logos/instagram.png';
 import githubLogo from '../../media/Logos/github.png';
-import menuLogo from '../../media/Logos/menu.png'
+import menuLogo from '../../media/Nav/menu.png'
 
 import './Navigation.scss';
 

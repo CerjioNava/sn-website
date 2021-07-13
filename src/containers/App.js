@@ -11,7 +11,7 @@ import Contact from '../components/Contact/Contact';
 import Home from '../components/Home/Home';
 
 // STYLE
-import arrowUp from '../media/arrowup.png';
+import arrowUp from '../media/Nav/arrowup.png';
 import './App.scss';
 
 // -------------------------------------------------------------------------------------------

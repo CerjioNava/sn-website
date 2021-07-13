@@ -9,32 +9,32 @@ import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
 import portfo1 from '../../media/Gallery/VG1.PNG';
-import portfo2 from '../../media/Gallery/Pixel1.gif';
+import portfo2 from '../../media/Gallery/Pixel1-5.gif';
 import portfo3 from '../../media/Gallery/Pixel3.gif';
+import arrow from '../../media/Nav/arrow6.png';
 
 import './Home.scss';
 
 // -------------------------------------------------------------------------------------------
 
-const showLogo = (logo, name) => {
-    return (
-        <div className="grid-child">
-            <Tilt className="Tilt shadow-2 logo" options={{ max: 0 }} >
-                <img alt="logo" src={logo} className="shadow-2 br-pill" />
-                <h4 className="skillName">{name}</h4>
-            </Tilt>
-        </div>
-    )
-}
-
 // About Section
 const About = () => {
+    
+    const showLogo = (logo, name) => {
+        return (
+            <div className="grid-child">
+                <Tilt className="Tilt shadow-2 logo" options={{ max: 0 }} >
+                    <img alt="logo" src={logo} className="shadow-2 br-pill" />
+                    <h4 className="skillName">{name}</h4>
+                </Tilt>
+            </div>
+        )
+    }
+
     return (
         <div className='about'>
             <div className='aboutme'>
-                <h1>
-                    About me 
-                </h1>
+                <h1> About me </h1>
                 <p> 
                     Since I was a child I've been a huge fan of technology and video games,
                     now I'm a Web Developer and I love creating video games as a hobby too!
@@ -44,16 +44,12 @@ const About = () => {
                     I do best.
                 </p>
                 <a href="/">
-                    <button>
-                        Read more
-                    </button>
+                    <button> Read more </button>
                 </a>
-                
             </div>
+
             <div className='skills'>
-                <h1>
-                    Check out my skills!
-                </h1>
+                <h1> Check out my skills! </h1>
                 <div className="grid-parent">
                     {showLogo(reactLogo, 'React')}
                     {showLogo(nodeLogo, 'Node')}
@@ -67,41 +63,44 @@ const About = () => {
     )
 }
 
+// Portfolio Section
 const Portfolio = () => {
+
+    const Content = () => {
+        return (
+            <div className='projects'>
+                <div className='project-view'>
+                    <img src={portfo2} alt='Videogames' />
+                </div>
+                <div className='content'> 
+                    <h1>
+                        {/* Have fun with my websites! */}
+                        Check out some of my latest work!
+                    </h1>
+                    <p>
+                        <br/>
+                        There are also videogames, have fun!
+                    </p>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className='portfo'>
             <div className='portfo-box'>
+                <div className='arrow' style={{'transform': 'scaleX(-1)'}} >
+                    <img src={arrow} alt='Previous' />
+                </div>
                 <div className='portfo-content'>
-                    <h1 >
-                        Projects
-                    </h1>
-                    <div className='projects'>
-                        <div className='project-section'>
-                            <img src={portfo2} alt='Videogames' />
-                            <div className='description'>
-                                VIDEOGAMES
-                            </div>
-                        </div>
-                        <div className='project-section'>
-                            <img src={portfo3} alt='Web' />
-                            <div className='description'>
-                                WEB DEVELOPMENT
-                                <br/><br/>
-                                Coming soon...
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt2'>
-                        <a href="/">
-                            <button>
-                                Read more
-                            </button>
-                        </a>
-                    </div>
-                    {/* LOS LINKS SERAN DIRECTAMENTE DE LA IMAGEN DE VIDEOGAMES Y WEB DEV */}
-                    {/* <button>
-                        Read more
-                    </button> */}
+                    {/* <h1 > Projects </h1> */}
+                    {Content()}
+                    <a href="/">
+                        <button> My Portfolio </button>
+                    </a>
+                </div>
+                <div className='arrow'>
+                    <img src={arrow} alt='Previous' />
                 </div>
             </div>
         </div>

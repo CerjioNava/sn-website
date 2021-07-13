@@ -39,6 +39,10 @@ button:hover {
     opacity: 1;
     cursor: pointer;
 }
+button:active {
+    transition: 0.1s;
+    opacity: 0.75;
+}
 
 // INTRO
 .intro {
@@ -117,8 +121,8 @@ button:hover {
                     height: 6em;
                     width: 6em;
                     border-radius: 100%;
-                    background: black;        
-                    opacity: 0.65;
+                    background: black;    
+                    opacity: 0.7;
                     .skillName {     
                         text-align: center; 
                         opacity: 0;
@@ -148,7 +152,7 @@ button:hover {
 .portfo {
     display: flex; 
     width: 100vw;
-    height: 80vh; 
+    height: 75vh; 
     align-items: center;
     justify-content: center; 
     text-align: center;   
@@ -156,38 +160,59 @@ button:hover {
     // background: rgba(155, 155, 155, 0.35);
     .portfo-box {
         display: flex;
-        width: 90%;
+        width: 95%;
         height: 90%;
-        justify-content: center; 
+        justify-content: space-between; 
         background: rgba(79, 123, 255, 0.1);
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            ;
+            img {
+                height: 48px;
+                opacity: 0.5;
+            }
+            img:hover {
+                transition: 0.2s ease-in-out;
+                opacity: 1;
+                cursor: pointer;
+            }
+            img:active {
+                transition: 0.1s;
+                opacity: 0.7;
+            }
+        }
         .portfo-content {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            padding: 3em 0em;
+            justify-content: center;
+            padding-top: 3em;
+            padding-bottom: 0em;
             h1 {
                 font-family: sectionTitle;
                 font-size: 2.25em;
                 margin: 0em;
             }
+            a {
+                margin-top: 2em;
+            }
             .projects {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 1em 0em;
+                // padding: 0em 3em;
                 width: 75vw;
-                height: 45vh;
-                .project-section {
+                height: 70%;
+                .project-view {
                     display: flex;
                     position: relative;
-                    width: 40%;
                     height: auto;
-                    margin: 1em 3em;
                     text-align: center;
-                    width: clamp(30%, 25vw, 40%);
+                    width: clamp(250px, 35%, 350px);
                     .description {
                         position: absolute;
-                        // color: white;
                         opacity: 0;
                         font-size: clamp(12px, 1.5em, 32px);
                         font-weight: bold;
@@ -195,19 +220,26 @@ button:hover {
                         left: 50%;
                         transform: translate(-50%, -50%);
                     }
-                    img {
-                        opacity: 1;
-                    }
+                    // img {
+                        
+                    // }
                 }
-                .project-section:hover {
+                .project-view:hover {
                     img {
-                        transition: 0.2s ease-in-out;
-                        opacity: 0.35;
                         cursor: pointer;
                     }
                     .description {
                         transition: 0.2s ease-in-out;
                         opacity: 1;
+                    }
+                }
+                .content {
+                    width: 60%;
+                    text-align: center;
+                    font-size: clamp(14px, 2vw, 24px);
+                    p {
+                        // font-size: 20px;
+                        font-size: clamp(14px, 1.5vw, 20px);
                     }
                 }
             }
@@ -255,27 +287,49 @@ button:hover {
         }
     }
     .portfo {
+        // height: fit-content;
+        height: 100vh;
         .portfo-box {
+            height: 95%;
+            .arrow {
+                // padding-inline: 0.5em;
+                // width: 100px;
+                img {
+                    height: 32px;
+                }
+            }
             .portfo-content {
-                justify-content: space-between;
+                // justify-content: space-between;
+                flex-direction: column;
+                justify-content: center;
                 padding: 2em 0em;
+                width: 100vw;
                 h1 {
                     margin-bottom: 0em;
+                    // margin-top: 0.5em;
                 }
                 .projects {
                     flex-direction: column;
-                    .project-section {
+                    height: 100%;
+                    width: fit-content;
+                    .project-view {
                         margin: 1em;
-                        width: 150px;
+                        // width: 200px;
+                        width: clamp(220px, 40vw, 260px);
                         .description {
                             font-size: 14px;
                         }
                     }
+                    // .content {
+                        
+                    // }
+                }
+                a {
+                    // margin-top: 1em;
+                    margin: 1em 0em;
                 }
             }
         }
         
     }
 }
-
-
