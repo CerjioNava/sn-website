@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';          // Para el título y evitar usar hooks para un titulo
+import { Helmet } from 'react-helmet';          
 import { animateScroll } from 'react-scroll';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // STATIC
 import Navigation from '../components/Navigation/Navigation';
 import CanvasAll from '../components/CanvasAll/CanvasAll';
 import Contact from '../components/Contact/Contact';
 
-// HOME
+// PAGES
 import Home from '../components/Home/Home';
+import About from '../components/About/About';
+import Portfolio from '../components/Portfolio/Portfolio';
 
 // STYLE
 import arrowUp from '../media/Nav/arrowup.png';
@@ -17,48 +20,39 @@ import './App.scss';
 // -------------------------------------------------------------------------------------------
 
 const ButtonScroll = () => {
-
-  const scrollTop = () => {
-    animateScroll.scrollToTop({
-      duration: 1000,
-      smooth: 'easeInOutQuad'
-    })
-  }
-
-  return (
-    <div className='b-scroll'>
-      <div onClick={scrollTop}>
-        <img alt='scroll' src={arrowUp} />
-      </div>
-    </div>
-  )
+    
+    const scrollTop = () => {
+        animateScroll.scrollToTop({
+            duration: 1000,
+            smooth: 'easeInOutQuad'
+        })
+    }
+    
+    return (
+        <div className='b-scroll'>
+            <div onClick={scrollTop}>
+                <img alt='scroll' src={arrowUp} />
+            </div>
+        </div>
+    )
 }
-
+    
 function App() {
-
-  const [route, setRoute] = useState('home');
-
-  const Page = () => {
-    console.log(route);
-    if (route === 'home')
-      return (<Home />)
-    // else if (route === 'about')
-    //   return (<About />)
-    // else
-    //   return (<Portfolio />)
-  }
-  
-  return (      
-    <div className='main'>
-      <Helmet><title>Sergio Nava | Desarrollador</title></Helmet>
-      <Navigation />
-      <ButtonScroll />
-      {Page()}
-      {/* <Home />       */}
-      <Contact />
-      <CanvasAll />
-    </div>     
-  );
+    return (      
+        <BrowserRouter className='main'>
+            <Helmet><title>Sergio Nava | Desarrollador Web</title></Helmet>
+            <Navigation />
+            <ButtonScroll />
+            <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/about' component={About} />
+                <Route path='/portfolio' component={Portfolio} />
+            </Switch>
+            <Contact />
+            <CanvasAll />
+        </BrowserRouter>     
+    );
 }
-
+        
 export default App;
+        

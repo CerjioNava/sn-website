@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Tilt from 'react-tilt';
+import { Link as RouteLink } from 'react-router-dom';
 
+// LOGOS
 import reactLogo from '../../media/Skills/react.png';
 import nodeLogo from '../../media/Skills/node.png';
 import threeLogo from '../../media/Skills/threejs.png';
@@ -8,6 +10,7 @@ import unityLogo from '../../media/Skills/unity.png';
 import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
+// IMAGES
 import portfo1 from '../../media/Gallery/VG1.PNG';
 import portfo2 from '../../media/Gallery/Pixel1-5.gif';
 import portfo3 from '../../media/Gallery/Pixel3.gif';
@@ -43,9 +46,9 @@ const About = () => {
                     But there is no end point to keep learning and improving, and that's what 
                     I do best.
                 </p>
-                <a href="/">
+                <RouteLink to="/about">
                     <button> Read more </button>
-                </a>
+                </RouteLink>
             </div>
 
             <div className='skills'>
@@ -69,7 +72,7 @@ const Portfolio = () => {
     const [portfo, setPortfo] = useState(0);
 
     const ChangePortfo = (num) => {
-        if (portfo < 2 && num==1 || portfo > 0 && num==-1) 
+        if ((portfo < 2 && num===1) || (portfo > 0 && num===-1)) 
             setPortfo(portfo+num);
     }
 
@@ -119,7 +122,7 @@ const Portfolio = () => {
                         <h1> More projects </h1>
                         <p>
                             <br/>
-                            COMING SOON...
+                            Coming soon...
                         </p>
                     </div>
                 </div>
@@ -135,9 +138,9 @@ const Portfolio = () => {
                 </div>
                 <div className='portfo-content'>
                     {Content()}
-                    <a href="/">
+                    <RouteLink to="/portfolio">
                         <button> My Portfolio </button>
-                    </a>
+                    </RouteLink>
                 </div>
                 <div className='arrow' >
                     <img src={arrow} alt='Previous' onClick={() => ChangePortfo(1)} />
@@ -161,11 +164,11 @@ const Home = () => {
                     <p className="f3 pb1">
                         Take a look, be my guest!
                     </p>
-                    <a href="/">
+                    <RouteLink to="/portfolio">
                         <button>
                             <h4>My Portfolio</h4>
                         </button>
-                    </a>
+                    </RouteLink>
                 </div>
             </div>
             {About()}

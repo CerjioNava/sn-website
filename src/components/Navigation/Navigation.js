@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { Link as RouteLink } from 'react-router-dom';
 
 import linkedinLogo from '../../media/Logos/linkedin.png';
 import instagramLogo from '../../media/Logos/instagram.png';
@@ -43,7 +44,7 @@ const Navigation = () => {
         <nav className="header" >            
             <div className='flex items-center ml4 mb1 justify-between'>
                 <p className="b f3">
-                    <a href="/" className="alink">SERGIO.</a>
+                    <RouteLink to="/" className="alink">SERGIO.</RouteLink>
                 </p>
                 <div className='menu' onClick={showMenu}>
                     <img alt='menu' src={menuLogo}/>
@@ -53,13 +54,13 @@ const Navigation = () => {
             <div className='flex justify-end'>
                 <div id="header-menu">
                     <p className="ma4 ml2">
-                        <a href="/" className="alink">Home</a>
+                        <RouteLink to="/" className="alink">Home</RouteLink>
                     </p>
                     <p className="ma4 ml2">
-                        <a href="/" className="alink">About</a>
+                        <RouteLink to="/about" className="alink">About</RouteLink>
                     </p>
                     <p className="ma4 ml2">
-                        <a href="/" className="alink">Portfolio</a>    
+                        <RouteLink to="/portfolio" className="alink">Portfolio</RouteLink>    
                     </p>
                     <p className="ma4 ml2">
                         <Link 
@@ -67,7 +68,6 @@ const Navigation = () => {
                             smooth='easeInOutQuad' 
                             duration={1750} 
                             className="alink"
-                            onClick={showMenu}
                         >
                             Contact
                         </Link>
