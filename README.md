@@ -1,6 +1,8 @@
 # SERGIO NAVA - PERSONAL WEBSITE
 
-This is my personal website. I made it using:
+This is my personal website, take a look!
+
+I'm making it using some different tools, libraries, some free icons from 'flaticons', and my creativity.
 
 **Front End:**
   - React
