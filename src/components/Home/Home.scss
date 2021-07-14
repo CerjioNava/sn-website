@@ -118,8 +118,8 @@ button:active {
                 margin-left: 2em;
                 margin-bottom: 3em;
                 .logo {
-                    height: 6em;
-                    width: 6em;
+                    height: 5em;
+                    width: 5em;
                     border-radius: 100%;
                     background: black;    
                     opacity: 0.7;
@@ -152,12 +152,11 @@ button:active {
 .portfo {
     display: flex; 
     width: 100vw;
-    height: 75vh; 
+    height: 70vh; 
     align-items: center;
     justify-content: center; 
     text-align: center;   
     font-size: clamp(13px, 1.4vw, 16px);
-    // background: rgba(155, 155, 155, 0.35);
     .portfo-box {
         display: flex;
         width: 95%;
@@ -194,8 +193,6 @@ button:active {
                 font-family: sectionTitle;
                 font-size: 2.25em;
                 margin: 0em;
-                // width: fit-content;
-                // text-align: center;
             }
             a {
                 margin-top: 2em;
@@ -204,7 +201,6 @@ button:active {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // padding: 0em 3em;
                 width: 75vw;
                 height: 70%;
                 .project-view {
@@ -223,9 +219,6 @@ button:active {
                         left: 50%;
                         transform: translate(-50%, -50%);
                     }
-                    // img {
-                        
-                    // }
                 }
                 .project-view:hover {
                     img {
@@ -242,7 +235,7 @@ button:active {
                     padding-left: 1em;
                     font-size: clamp(14px, 2vw, 24px);
                     p {
-                        // font-size: 20px;
+                        padding: 0em 1em;
                         font-size: clamp(14px, 1.5vw, 20px);
                     }
                 }
@@ -280,8 +273,8 @@ button:active {
                     margin-right: 1em;
                     margin-left: 1em;
                     .logo {
-                        height: 5.5em;
-                        width: 5.5em;
+                        // height: 5.5em;
+                        // width: 5.5em;
                         h4 {
                             font-size: 0.9em;
                         }
@@ -291,19 +284,15 @@ button:active {
         }
     }
     .portfo {
-        // height: fit-content;
         height: 100vh;
         .portfo-box {
             height: 95%;
             .arrow {
-                // padding-inline: 0.5em;
-                // width: 100px;
                 img {
                     height: 32px;
                 }
             }
             .portfo-content {
-                // justify-content: space-between;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -311,16 +300,13 @@ button:active {
                 width: 100vw;
                 h1 {
                     margin-bottom: 0em;
-                    // margin-top: 0.5em;
                 }
                 .projects {
                     flex-direction: column;
                     height: 100%;
                     width: 60vw;
-                    // width: fit-content;
                     .project-view {
                         margin: 1em;
-                        // width: 200px;
                         width: clamp(220px, 40vw, 260px);
                         .description {
                             font-size: 14px;
@@ -333,7 +319,6 @@ button:active {
                     }
                 }
                 a {
-                    // margin-top: 1em;
                     margin: 1em 0em;
                 }
             }

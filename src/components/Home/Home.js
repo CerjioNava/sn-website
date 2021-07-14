@@ -53,8 +53,8 @@ const About = () => {
                 <div className="grid-parent">
                     {showLogo(reactLogo, 'React')}
                     {showLogo(nodeLogo, 'Node')}
-                    {showLogo(threeLogo, 'Three.js')}                
-                    {showLogo(unityLogo, 'Unity')} 
+                    {showLogo(unityLogo, 'Unity')}
+                    {showLogo(threeLogo, 'Three.js')}
                     {showLogo(postgreLogo, 'SQL')}
                     {showLogo(pythonLogo, 'Python')}
                 </div>
@@ -88,7 +88,7 @@ const Portfolio = () => {
                         <h1> Check out some of my latest work! </h1>
                         <p>
                             <br/>
-                            There are also videogames, have fun!
+                            There are also video games, have fun!
                         </p>
                     </div>
                 </div>
@@ -100,10 +100,11 @@ const Portfolio = () => {
                         <img src={portfo3} alt='Videogames' />
                     </div>
                     <div className='content'> 
-                        <h1> Play my videogames! </h1>
+                        <h1> You can play my video games! </h1>
                         <p>
                             <br/>
-                            TURURURURURU
+                            Don't be so serious, come and laugh a little!
+                            There will always be time for entertainment.
                         </p>
                     </div>
                 </div>
@@ -112,10 +113,10 @@ const Portfolio = () => {
             return (
                 <div className='projects'>
                     <div className='project-view'>
-                        <img src={portfo3} alt='Videogames' />
+                        <img src={portfo2} alt='Videogames' />
                     </div>
                     <div className='content'> 
-                        <h1> WEB DEV </h1>
+                        <h1> More projects </h1>
                         <p>
                             <br/>
                             COMING SOON...
