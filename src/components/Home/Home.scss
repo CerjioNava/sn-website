@@ -52,6 +52,7 @@ button:active {
     align-items: center;
     justify-content: center;
     padding-bottom: 20vh;
+    margin-top: 2em;
     text-align: center;
     // MY NAME
     h1 {
@@ -68,7 +69,7 @@ button:active {
 }
 
 // ABOUT
-.about {
+#about {
     display: flex; 
     width: 100vw;
     height: 70vh; 
@@ -250,7 +251,7 @@ button:active {
         padding-bottom: 10vh;
     }
     
-    .about {
+    #about {
         flex-direction: column;
         height: fit-content;
         .aboutme {

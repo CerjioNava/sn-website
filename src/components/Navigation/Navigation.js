@@ -29,7 +29,7 @@ const logoNav = () => {
 
 const Navigation = () => {
     
-    const [menu, setMenu] = useState(true);    
+    const [menu, setMenu] = useState(true);   
 
     const showMenu = () => {
         setMenu(!menu);

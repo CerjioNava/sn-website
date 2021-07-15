@@ -1,0 +1,122 @@
+// ABOUT
+.about {
+    display: flex; 
+    width: 100vw;
+    height: 80vh; 
+    align-items: center;
+    justify-content: center;    
+    // background: rgba(0, 38, 56, 0.35);
+    // color: white;
+    // padding-top: 1em;
+
+    // text-align: justify;
+    font-size: clamp(13px, 1.4vw, 16px);
+    // ABOUT ME
+    .about-box {
+        display: flex;
+        width: 95%;
+        height: 95%;
+        align-items: center;
+        justify-content: center;    
+        // background: rgba(0, 38, 56, 0.35);
+        #profile {
+            img {
+                border-radius: 5%;
+                width: clamp(300px, 35vw, 400px);
+            }
+        }
+        .aboutme {
+            display: flex; 
+            flex-direction: column; 
+            height: 60vh;
+            width: 50vw;        
+            align-items: center;
+            justify-content: center;
+            margin-left: 2em;
+            h1 {
+                font-family: sectionTitle;
+                font-size: 3em;
+                text-align: center;
+                margin: 0;
+            }
+            p {
+                text-align: center;
+                padding: 1em 2em;        
+            }
+        }
+        
+    }
+}
+
+.my-skills {
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 38, 56, 0.35);
+    color: white;
+    .skills {
+        display: flex; 
+        flex-direction: column;
+        height: 90%; 
+        width: 90vw;
+        text-align: center; 
+        padding: 1em;
+        .grid-parent {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(6, auto);
+            // grid-auto-columns: auto;
+            grid-template-rows: auto auto;
+            margin: 2em;
+            .grid-child {
+                margin-right: 2em;
+                margin-left: 2em;
+                margin-bottom: 3em;
+                .logo {
+                    height: 5em;
+                    width: 5em;
+                    border-radius: 100%;
+                    background: black;    
+                    opacity: 0.7;
+                    .skillName {     
+                        text-align: center; 
+                        opacity: 0;
+                        margin-top: 0.5em;
+                    }
+                }    
+                .logo:hover {
+                    transition: 0.2s ease-in-out;
+                    opacity: 1;
+                    cursor: pointer;
+                    .skillName {
+                        transition: 0.25s ease-in-out;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+            
+        h1 {
+            font-family: sectionTitle;
+            font-size: 2.2em;
+        }
+    }
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 580px)  {
+    .about {
+        flex-direction: column;
+        height: 120vh;
+        .aboutme {
+            width: 80vw;
+            height: fit-content;
+        }
+        #profile {
+            img {
+                width: 200px;
+            }
+        }
+    }
+}

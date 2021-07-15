@@ -35,7 +35,7 @@ const About = () => {
     }
 
     return (
-        <div className='about'>
+        <div id='about'>
             <div className='aboutme'>
                 <h1> About me </h1>
                 <p> 
@@ -56,8 +56,8 @@ const About = () => {
                 <div className="grid-parent">
                     {showLogo(reactLogo, 'React')}
                     {showLogo(nodeLogo, 'Node')}
-                    {showLogo(unityLogo, 'Unity')}
                     {showLogo(threeLogo, 'Three.js')}
+                    {showLogo(unityLogo, 'Unity')}
                     {showLogo(postgreLogo, 'SQL')}
                     {showLogo(pythonLogo, 'Python')}
                 </div>
