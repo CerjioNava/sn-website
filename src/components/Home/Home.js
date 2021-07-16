@@ -11,7 +11,7 @@ import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
 // IMAGES
-import portfo1 from '../../media/Gallery/VG1.PNG';
+import portfo1 from '../../media/Gallery/Pixel2.png';
 import portfo2 from '../../media/Gallery/Pixel1-5.gif';
 import portfo3 from '../../media/Gallery/Pixel3.gif';
 import arrow from '../../media/Nav/arrow6.png';

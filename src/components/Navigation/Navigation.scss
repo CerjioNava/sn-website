@@ -5,6 +5,7 @@
     padding: 1em 2em;
     padding-bottom: 1em;
     font-size: 1.25em;
+    // background: rgba(79, 123, 255, 0.1);
     .alink {
         text-decoration: none;
         color: black;
@@ -56,6 +57,7 @@
         flex-direction: column;
         filter: invert(100);
         background: rgba(255, 217, 199, 0.35);
+        // background: rgba(176, 132, 0, 0.35);
         padding: 0em;
         font-weight: bold;
         #header-menu {
