@@ -11,9 +11,9 @@ import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
 // IMAGES
-import portfo1 from '../../media/Gallery/Pixel2.png';
-import portfo2 from '../../media/Gallery/Pixel1-5.gif';
-import portfo3 from '../../media/Gallery/Pixel3.gif';
+import portfo1 from '../../media/Gallery/Pixel4.gif';       // Kirby
+import portfo2 from '../../media/Gallery/Pixel1-5.gif';     // Kevin
+import portfo3 from '../../media/Gallery/Pixel3.gif';       // Cacodemon
 import arrow from '../../media/Nav/arrow6.png';
 
 import './Home.scss';
@@ -51,16 +51,8 @@ const About = () => {
                 </RouteLink>
             </div>
 
-            <div className='skills'>
-                <h1> Check out my skills! </h1>
-                <div className="grid-parent">
-                    {showLogo(reactLogo, 'React')}
-                    {showLogo(nodeLogo, 'Node')}
-                    {showLogo(threeLogo, 'Three.js')}
-                    {showLogo(unityLogo, 'Unity')}
-                    {showLogo(postgreLogo, 'SQL')}
-                    {showLogo(pythonLogo, 'Python')}
-                </div>
+            <div className='about-profile'>
+                <img src={portfo2} alt='Videogames' />
             </div>
         </div>
     )
@@ -100,7 +92,7 @@ const Portfolio = () => {
             return (
                 <div className='projects'>
                     <div className='project-view'>
-                        <img src={portfo3} alt='Videogames' />
+                        <img src={portfo1} alt='Videogames' />
                     </div>
                     <div className='content'> 
                         <h1> You can play my video games! </h1>
@@ -116,7 +108,7 @@ const Portfolio = () => {
             return (
                 <div className='projects'>
                     <div className='project-view'>
-                        <img src={portfo2} alt='Videogames' />
+                        <img src={portfo3} alt='Videogames' />
                     </div>
                     <div className='content'> 
                         <h1> More projects </h1>

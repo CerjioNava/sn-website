@@ -10,7 +10,7 @@ import unityLogo from '../../media/Skills/unity.png';
 import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
-import profile from '../../media/Gallery/Pixel1-5.gif';
+import profile from '../../media/Gallery/Pixel4.gif';
 
 import './About.scss';
 
@@ -52,7 +52,7 @@ const About = () => {
         <>
             <div className='about'>
                 <div className='about-box'>
-                    <div id='profile'>
+                    <div className='profile'>
                         <img src={profile} alt='profile' />
                     </div>
                     <div className='aboutme'>
@@ -76,11 +76,32 @@ const About = () => {
                         </p>
                     </div>
                 </div>
+            
+                <div className='my-skills'>
+                    {Skills()}
+                </div>
+            </div>
+
+            <div className='about ma4 other-bg' >
+                <div className='about-box'>
+                    <div className='aboutme'>
+                        <h1> Off topic </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            NOTA: A un bloque completo "<></>" de cualquier tag, se le conoce como un "elemento".
+                        </p>
+                    </div>
+                    <div className='profile'>
+                        <img src={profile} alt='offtopic' />
+                    </div>
+                </div>
             </div>
             
-            <div className='my-skills'>
-                {Skills()}
-            </div>
         </>
     )
 }

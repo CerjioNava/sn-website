@@ -72,7 +72,8 @@ button:active {
 #about {
     display: flex; 
     width: 100vw;
-    height: 70vh; 
+    height: 70vh;
+    height: fit-content; 
     align-items: center;
     justify-content: center;    
     background: rgba(0, 38, 56, 0.35);
@@ -86,65 +87,25 @@ button:active {
         height: 50vh;
         width: 40vw;        
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 1em;
         h1 {
             font-family: sectionTitle;
-            font-size: 3em;
+            font-size: 3.2em;
             text-align: center;
             margin: 0;
         }
         p {
             text-align: center;
-            padding: 2em;        
+            padding: 1em 2em;
         }
     }
-    // SKILLS
-    .skills {
-        display: flex; 
-        flex-direction: column;
-        height: 50vh; 
-        width: 45vw;
-        text-align: center; 
-        .grid-parent {
-            display: grid;
-            height: fit-content;
-            justify-content: center;
-            align-items: space-evenly;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto;
-            padding: 2em;
-            .grid-child {
-                margin-right: 2em;
-                margin-left: 2em;
-                margin-bottom: 3em;
-                .logo {
-                    height: 5em;
-                    width: 5em;
-                    border-radius: 100%;
-                    background: black;    
-                    opacity: 0.7;
-                    .skillName {     
-                        text-align: center; 
-                        opacity: 0;
-                        margin-top: 0.5em;
-                    }
-                }    
-                .logo:hover {
-                    transition: 0.2s ease-in-out;
-                    opacity: 1;
-                    cursor: pointer;
-                    .skillName {
-                        transition: 0.25s ease-in-out;
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-        
-        h1 {
-            font-family: sectionTitle;
-            font-size: 2.2em;
+    .about-profile {
+        margin-left: 4em;
+        width: clamp(250px, 25%, 300px);
+        img {
+            border-radius: 100em;
+            background: rgba(white, 0.75);
         }
     }
 }
@@ -153,15 +114,18 @@ button:active {
 .portfo {
     display: flex; 
     width: 100vw;
-    height: 70vh; 
+    // height: 70vh; 
+    height: fit-content;
     align-items: center;
     justify-content: center; 
     text-align: center;   
     font-size: clamp(13px, 1.4vw, 16px);
+    padding: 2em 1em;
     .portfo-box {
         display: flex;
         width: 95%;
-        height: 90%;
+        // height: 90%;
+        height: fit-content;
         justify-content: space-between; 
         background: rgba(79, 123, 255, 0.1);
         .arrow {
@@ -206,28 +170,13 @@ button:active {
                 height: 70%;
                 .project-view {
                     display: flex;
-                    position: relative;
                     height: auto;
-                    margin-left: 1em;
-                    text-align: center;
-                    width: clamp(250px, 35%, 350px);
-                    .description {
-                        position: absolute;
-                        opacity: 0;
-                        font-size: clamp(12px, 1.5em, 32px);
-                        font-weight: bold;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-                .project-view:hover {
+                    justify-content: center;
+                    // width: clamp(250px, 25%, 300px);
                     img {
-                        cursor: pointer;
-                    }
-                    .description {
-                        transition: 0.2s ease-in-out;
-                        opacity: 1;
+                        width: clamp(250px, 25vw, 300px);
+                        // width: 500px;
+                        // background: black;
                     }
                 }
                 .content {
@@ -252,8 +201,9 @@ button:active {
     }
     
     #about {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: fit-content;
+        padding: 3em 0em;
         .aboutme {
             width: 80vw;
             height: fit-content;
@@ -261,27 +211,9 @@ button:active {
                 padding: 1em;
             }
         }
-        .skills {
-            width: 80vw;
-            h1 {
-                margin-bottom: 1.2em;
-            }
-            .grid-parent {
-                grid-template-columns: auto auto auto;
-                grid-template-rows: auto;
-                padding: 0em;
-                .grid-child {
-                    margin-right: 1em;
-                    margin-left: 1em;
-                    .logo {
-                        // height: 5.5em;
-                        // width: 5.5em;
-                        h4 {
-                            font-size: 0.9em;
-                        }
-                    }
-                }
-            }
+        .about-profile {
+            margin: 0em;
+            width: 50%;
         }
     }
     .portfo {
@@ -308,9 +240,10 @@ button:active {
                     width: 60vw;
                     .project-view {
                         margin: 1em;
-                        width: clamp(220px, 40vw, 260px);
-                        .description {
-                            font-size: 14px;
+                        // width: clamp(220px, 40vw, 260px);
+                        img {
+                            // width: clamp(250px, 50%, 300px);
+                            width: 100%;
                         }
                     }
                     .content {

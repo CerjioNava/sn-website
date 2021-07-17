@@ -1,6 +1,11 @@
 #contact {
-    display: flex;
-    height: 30vh;
+    // display: flex;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 32rem);
+    // height: 30vh;
+    height: fit-content;
+    padding: 3em 0em;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -27,8 +32,10 @@
 
 @media screen and (orientation: portrait), screen and (max-width: 580px)  {
     #contact {
+        display: flex;
         flex-direction: column;
-        height: 60%;
+        // height: 65%;
         font-size: 14px;
+        // gap: 1em;
     }
 }
