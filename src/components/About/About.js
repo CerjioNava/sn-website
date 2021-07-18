@@ -11,7 +11,15 @@ import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
 import profile from '../../media/Gallery/Pixel4.gif';
+
+// Hobbies
 import hobby from '../../media/Gallery/Pixel4.gif';
+import starwars from '../../media/Hobby/starwars.png';
+import smash from '../../media/Hobby/smash.png';
+import ghibli from '../../media/Hobby/ghibli.png';
+import lotr from '../../media/Hobby/lotr.png';
+import animals from '../../media/Hobby/animals.png';
+import avatar from '../../media/Hobby/avatar.png';
 
 import './About.scss';
 
@@ -45,7 +53,7 @@ const Skills = () => {
     )
 }
 
-const FlipBox = (image, description) => {
+const FlipBox = (image, backimage, description) => {
     
     return (
         <div class="flip-box">
@@ -54,6 +62,7 @@ const FlipBox = (image, description) => {
                     <img src={image} alt="offtopic" />
                 </div>
                 <div class="flip-box-back">
+                <img src={backimage} alt="offtopic" />
                     <h2>{description}</h2>
                 </div>
             </div>
@@ -103,12 +112,12 @@ const About = () => {
             <div className='offtopic'>
                 <h1>Things I really like</h1>
                 <div className='grid-offtopic'>
-                    {FlipBox(hobby, 'Star Wars')}
-                    {FlipBox(hobby, 'Super Smash Bros')}
-                    {FlipBox(hobby, 'Studio Ghibli')}
-                    {FlipBox(hobby, 'Lord of the Rings')}
-                    {FlipBox(hobby, 'Animals')}
-                    {FlipBox(hobby, 'more')}
+                    {FlipBox(hobby, starwars,'Star Wars')}
+                    {FlipBox(hobby, smash,'Super Smash Bros')}
+                    {FlipBox(hobby, ghibli,'Studio Ghibli')}
+                    {FlipBox(hobby, lotr,'Lord of the Rings')}
+                    {FlipBox(hobby, avatar,'Avatar')}
+                    {FlipBox(hobby, animals,'Animals')}
                 </div>
             </div>
         </>

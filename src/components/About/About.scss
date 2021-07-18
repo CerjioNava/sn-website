@@ -147,12 +147,13 @@
                     display: flex;
                     align-items: center;
                     width: fit-content;
-                    padding: 1.25em;
+                    // padding: 1.25em;
+                    padding: 15%;
                     // background: rgba(79, 123, 255, 0.15); 
                     background: rgba(white, 1);
                 }
                 .flip-box-back {
-                    background: rgba(0, 0, 0, 0.75);
+                    background: rgba(0, 0, 0, 0.5);
                     color: white;
                     transform: rotateY(180deg);
                     display: flex;
@@ -160,6 +161,11 @@
                     justify-content: center;
                     align-items: center;
                     font-size: clamp(10px, 1vw, 16px);
+                    img {
+                        position: absolute;
+                        width: 80%;
+                        z-index: -10;
+                    }
                 }
             }
             // img {
