@@ -14,14 +14,14 @@ import './Navigation.scss';
 const logoNav = () => {
     return (
         <div className='logoNav'>
-            <a href={"https://github.com/CerjioNava"} >
-                <img alt="logo" src={githubLogo} className='icon' />
-            </a>
             <a href={"https://www.linkedin.com/in/sergio-j-nava-g/"} >
                 <img alt="logo" src={linkedinLogo} className='icon' />
             </a>
             <a href={"https://www.instagram.com/cerjionava/"} >
                 <img alt="logo" src={instagramLogo} className='icon' />
+            </a>
+            <a href={"https://github.com/CerjioNava"} >
+                <img alt="logo" src={githubLogo} className='icon' />
             </a>
         </div>       
     )
