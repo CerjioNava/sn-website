@@ -9,11 +9,9 @@ import threeLogo from '../../media/Skills/threejs.png';
 import unityLogo from '../../media/Skills/unity.png';
 import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
-// Hobby
-import starwars from '../../media/Gallery/starwars.png';
-import ghibli from '../../media/Gallery/kodama2.png';
 
 import profile from '../../media/Gallery/Pixel4.gif';
+import hobby from '../../media/Gallery/Pixel4.gif';
 
 import './About.scss';
 
@@ -63,8 +61,6 @@ const FlipBox = (image, description) => {
     )
 }
 
-
-
 const About = () => {
 
     return (
@@ -100,34 +96,19 @@ const About = () => {
                     {Skills()}
                 </div>
             </div>
-
-            {/* <div className='about ma4 other-bg' >
-                <div className='about-box offtopic-box'>
-                    <div className='aboutme'>
-                        <h1> Off topic </h1>
-                        <p>
-                            I love Star Wars
-
-                        </p>
-                    </div>
-                    <div className='profile'>
-                        <img src={profile} alt='offtopic' />
-                    </div>
-                </div>
+            {/* <div className='my-skills'>
+                {Skills()}
             </div> */}
+
             <div className='offtopic'>
-                <h1>About myself</h1>
+                <h1>Things I really like</h1>
                 <div className='grid-offtopic'>
-                    {FlipBox(starwars, 'I love Star Wars')}
-                    {FlipBox(profile, 'I love Video Games')}
-                    {FlipBox(ghibli, 'I love Studio Ghibli')}
-                    {FlipBox(profile, 'I love ')}
-                    {FlipBox(profile, 'I love ')}
-                    {FlipBox(profile, 'I love ')}
-                    {FlipBox(profile, 'I love ')}
-                    {FlipBox(profile, 'I love ')}
-                    {FlipBox(profile, 'I love ')}
-                    {FlipBox(profile, 'I love ')}
+                    {FlipBox(hobby, 'Star Wars')}
+                    {FlipBox(hobby, 'Super Smash Bros')}
+                    {FlipBox(hobby, 'Studio Ghibli')}
+                    {FlipBox(hobby, 'Lord of the Rings')}
+                    {FlipBox(hobby, 'Animals')}
+                    {FlipBox(hobby, 'more')}
                 </div>
             </div>
         </>

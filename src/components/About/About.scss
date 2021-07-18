@@ -5,13 +5,8 @@
     height: fit-content;
     align-items: center;
     justify-content: center;    
-    // background: rgba(79, 123, 255, 0.15);
-    
-    background: rgba(0, 38, 56, 0.4);
+    background: rgba(0, 38, 56, 0.4);; 
     color: white;
-    // margin-bottom: 2em;
-    // margin-left: 2em;
-    // margin-right: 2em;
     padding: 2em;
     font-size: clamp(13px, 1.4vw, 16px);
     
@@ -108,12 +103,17 @@
 }
 
 .offtopic {
+    background: rgba(#FF4F7B, 0.5); 
+    // margin: 2em 0em;
+    margin: 2em;
     h1 {
         font-family: sectionTitle;
-        font-size: clamp(2.5em, 5vw, 3em);
+        font-size: clamp(2.4em, 5vw, 3em);
         text-align: center;
-        margin-top: 1em;
+        margin-top: 0em;
         margin-bottom: 0em;
+        padding-top: 1em;
+        color: white;
     }
     .grid-offtopic {
         display: flex;
@@ -126,8 +126,8 @@
             width: 200px;
             // width: 20vw;
             height: 200px;
-            width: clamp(130px, 18vw, 200px);
-            height: clamp(130px, 18vw, 200px);
+            width: clamp(100px, 18vw, 150px);
+            height: clamp(100px, 18vw, 150px);
             // height: auto;
             .flip-box-inner {
                 position: relative;
@@ -141,23 +141,25 @@
                     width: 100%;
                     height: 100%;
                     backface-visibility: hidden;
+                    border-radius: 10%;
                 }
                 .flip-box-front {
                     display: flex;
                     align-items: center;
                     width: fit-content;
-                    padding: 1em;
-                    background: rgba(79, 123, 255, 0.15); 
-                    // background: rgba(0, 0, 0, 0.8);
+                    padding: 1.25em;
+                    // background: rgba(79, 123, 255, 0.15); 
+                    background: rgba(white, 1);
                 }
                 .flip-box-back {
-                    background: rgba(0, 0, 0, 0.8);
+                    background: rgba(0, 0, 0, 0.75);
                     color: white;
                     transform: rotateY(180deg);
                     display: flex;
                     padding: 10%;
                     justify-content: center;
                     align-items: center;
+                    font-size: clamp(10px, 1vw, 16px);
                 }
             }
             // img {
@@ -187,8 +189,7 @@
                 height: fit-content;
                 margin: 0em;
                 p {
-                    padding: 0em;
-                    padding-top: 1em;
+                    padding: 1em 0em;
                     margin-bottom: 0em;
                 }
             }
@@ -218,9 +219,14 @@
         }
     }
     .offtopic {
+        margin: 1em;
+        h1 {
+            padding-right: 1em;
+            padding-left: 1em;
+        }
         .grid-offtopic {
             gap: 2em;
-            padding: 3em 2em;
+            padding: 3em 1.5em;
         }
     }
 }

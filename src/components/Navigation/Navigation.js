@@ -36,8 +36,18 @@ const Navigation = () => {
 
         if (!menu)
             document.getElementById('header-menu').style.display='none';
-        else  
+        else 
             document.getElementById('header-menu').style.display='flex';
+    }
+
+    const showMenuTrans = () => {
+        
+        if (!menu) {
+            setMenu(!menu);
+            setTimeout(() => {
+                document.getElementById('header-menu').style.display='none';    
+            }, 0);
+        }
     }
 
     return (
@@ -53,26 +63,28 @@ const Navigation = () => {
 
             <div className='flex justify-end'>
                 <div id="header-menu">
-                    <p className="ma4 ml2">
-                        <RouteLink to="/" className="alink">Home</RouteLink>
-                    </p>
-                    <p className="ma4 ml2">
-                        <RouteLink to="/about" className="alink">About</RouteLink>
-                    </p>
-                    <p className="ma4 ml2">
-                        <RouteLink to="/portfolio" className="alink">Portfolio</RouteLink>    
-                    </p>
-                    <p className="ma4 ml2">
-                        <Link 
-                            to="contact" 
-                            smooth='easeInOutQuad' 
-                            duration={1750} 
-                            className="alink"
-                        >
-                            Contact
-                        </Link>
-                    </p>
-                
+                    <RouteLink to="/" className="alink-parent" onClick={showMenuTrans}>
+                        <p className="alink">Home</p>
+                    </RouteLink>
+
+                    <RouteLink to="/about" className="alink-parent" onClick={showMenuTrans}>
+                        <p className="alink">About</p>
+                    </RouteLink>
+
+                    <RouteLink to="/portfolio" className="alink-parent" onClick={showMenuTrans}>
+                        <p className="alink">Portfolio</p>
+                    </RouteLink>
+
+                    <Link 
+                        to="contact" 
+                        smooth='easeInOutQuad' 
+                        duration={1750} 
+                        className="alink-parent"
+                        onClick={showMenuTrans}
+                    >
+                        <p className="alink">Contact</p>
+                    </Link>
+
                     {logoNav()}
                 </div>            
             </div>
