@@ -72,23 +72,25 @@ button:active {
 #about {
     display: flex; 
     width: 100vw;
-    height: 70vh;
+    // height: 70vh;
     height: fit-content; 
     align-items: center;
     justify-content: center;    
     background: rgba(0, 38, 56, 0.35);
     color: white;
-    padding-top: 1em;
+    padding: 5em 0em;
     font-size: clamp(13px, 1.4vw, 16px);
     // ABOUT ME
     .aboutme {
         display: flex; 
         flex-direction: column; 
-        height: 50vh;
+        // height: 50vh;
+        height: fit-content;
         width: 40vw;        
         align-items: center;
         justify-content: center;
         padding: 1em;
+        // margin-right: 4em;
         h1 {
             font-family: sectionTitle;
             font-size: 3.2em;
@@ -102,10 +104,11 @@ button:active {
     }
     .about-profile {
         margin-left: 4em;
+        // margin-right: 4em;
         width: clamp(250px, 25%, 300px);
         img {
             border-radius: 100em;
-            background: rgba(white, 0.75);
+            background: rgba(white, 1);
         }
     }
 }
@@ -152,8 +155,7 @@ button:active {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-top: 3em;
-            padding-bottom: 0em;
+            padding: 3em 0em;
             h1 {
                 font-family: sectionTitle;
                 font-size: 2.25em;
@@ -219,7 +221,7 @@ button:active {
     .portfo {
         height: 100vh;
         .portfo-box {
-            height: 95%;
+            height: 100%;
             .arrow {
                 img {
                     height: 32px;
