@@ -18,7 +18,7 @@ import starwars from '../../media/Hobby/starwars.png';
 import smash from '../../media/Hobby/smash.png';
 import ghibli from '../../media/Hobby/ghibli.png';
 import lotr from '../../media/Hobby/lotr.png';
-import animals from '../../media/Hobby/animals.png';
+import bunnies from '../../media/Hobby/bunnies.png';
 import avatar from '../../media/Hobby/avatar.png';
 
 import './About.scss';
@@ -105,19 +105,16 @@ const About = () => {
                     {Skills()}
                 </div>
             </div>
-            {/* <div className='my-skills'>
-                {Skills()}
-            </div> */}
 
             <div className='offtopic'>
-                <h1>Things I really like</h1>
+                <h1>Off topic - Things I really like</h1>
                 <div className='grid-offtopic'>
-                    {FlipBox(hobby, starwars,'Star Wars')}
                     {FlipBox(hobby, smash,'Super Smash Bros')}
                     {FlipBox(hobby, ghibli,'Studio Ghibli')}
+                    {FlipBox(hobby, starwars,'Star Wars')}
                     {FlipBox(hobby, lotr,'Lord of the Rings')}
                     {FlipBox(hobby, avatar,'Avatar')}
-                    {FlipBox(hobby, animals,'Animals')}
+                    {FlipBox(hobby, bunnies,'Bunnies')}
                 </div>
             </div>
         </>
