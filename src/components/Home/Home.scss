@@ -76,7 +76,7 @@ button:active {
     height: fit-content; 
     align-items: center;
     justify-content: center;    
-    background: rgba(0, 38, 56, 0.35);
+    background: rgba(0, 38, 56, 0.45);
     color: white;
     padding: 5em 0em;
     font-size: clamp(13px, 1.4vw, 16px);
@@ -108,8 +108,9 @@ button:active {
         width: clamp(250px, 25%, 300px);
         img {
             border-radius: 100em;
-            // background: rgba(white, 0.5);
+            // background: rgba(#3BBF5C, 1);
             // background: rgba(#bd992f, 0.75);
+            background: rgba(white, 0.75);
         }
     }
 }
