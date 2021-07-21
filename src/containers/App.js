@@ -40,7 +40,7 @@ const ButtonScroll = () => {
 function App() {
     return (      
         <BrowserRouter className='main'>
-            <Helmet><title>Sergio Nava | Desarrollador Web</title></Helmet>
+            <Helmet><title>Sergio Nava | Web Developer</title></Helmet>
             <Navigation />
             <ButtonScroll />
             <Switch>

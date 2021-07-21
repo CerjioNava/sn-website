@@ -108,7 +108,8 @@ button:active {
         width: clamp(250px, 25%, 300px);
         img {
             border-radius: 100em;
-            background: rgba(white, 1);
+            // background: rgba(white, 0.5);
+            // background: rgba(#bd992f, 0.75);
         }
     }
 }

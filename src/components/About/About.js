@@ -10,7 +10,8 @@ import unityLogo from '../../media/Skills/unity.png';
 import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
-import profile from '../../media/Gallery/Pixel4.gif';
+// import profile from '../../media/Gallery/Pixel4.gif';
+import profile from '../../media/Gallery/profile.png';
 
 // Hobbies
 import hobby from '../../media/Gallery/Pixel4.gif';
@@ -107,7 +108,7 @@ const About = () => {
             </div>
 
             <div className='offtopic'>
-                <h1>Off topic - Things I really like</h1>
+                <h1>Off topic: Things I really like</h1>
                 <div className='grid-offtopic'>
                     {FlipBox(hobby, smash,'Super Smash Bros')}
                     {FlipBox(hobby, ghibli,'Studio Ghibli')}

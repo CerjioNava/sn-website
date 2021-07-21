@@ -11,6 +11,7 @@ import pythonLogo from '../../media/Skills/python.png';
 import postgreLogo from '../../media/Skills/postgresql.png';
 
 // IMAGES
+import profile from '../../media/Gallery/profile.png';      // Profile
 import portfo1 from '../../media/Gallery/Pixel4.gif';       // Kirby
 import portfo2 from '../../media/Gallery/Pixel1-5.gif';     // Kevin
 import portfo3 from '../../media/Gallery/Pixel3.gif';       // Cacodemon
@@ -52,7 +53,7 @@ const About = () => {
             </div>
 
             <div className='about-profile'>
-                <img src={portfo2} alt='Videogames' />
+                <img src={profile} alt='profile' />
             </div>
         </div>
     )
