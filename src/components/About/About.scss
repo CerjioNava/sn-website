@@ -38,28 +38,6 @@
                 font-size: clamp(14px, 1.5vw, 16px);
             }
         }
-        // .aboutme {
-        //     display: flex; 
-        //     flex-direction: column; 
-        //     height: auto;
-        //     width: 45vw;        
-        //     align-items: center;
-        //     justify-content: center;
-        //     margin-left: 2em;
-        //     margin-top: 1.5em;
-        //     h1 {
-        //         font-family: sectionTitle;
-        //         font-size: 3em;
-        //         text-align: center;
-        //         margin: 0em;
-        //     }
-        //     p {
-        //         text-align: center;
-        //         padding: 1em 2em;   
-        //         padding-bottom: 0em;
-        //         font-size: clamp(14px, 1.5vw, 16px);
-        //     }
-        // }
     }
 }
 
@@ -122,7 +100,6 @@
 
 .offtopic {
     background: rgba(#FF4F7B, 0.5); 
-    // margin: 2em 0em;
     margin: 2em;
     h1 {
         font-family: sectionTitle;
@@ -142,11 +119,9 @@
         .flip-box {
             perspective: 1000px; 
             width: 200px;
-            // width: 20vw;
             height: 200px;
             width: clamp(100px, 18vw, 150px);
             height: clamp(100px, 18vw, 150px);
-            // height: auto;
             .flip-box-inner {
                 position: relative;
                 width: 100%;
@@ -165,9 +140,7 @@
                     display: flex;
                     align-items: center;
                     width: fit-content;
-                    // padding: 1.25em;
                     padding: 15%;
-                    // background: rgba(79, 123, 255, 0.15); 
                     background: rgba(white, 1);
                 }
                 .flip-box-back {
@@ -186,9 +159,6 @@
                     }
                 }
             }
-            // img {
-            //     width: 20vw;
-            // }
         }
         .flip-box:hover .flip-box-inner {
             transform: rotateY(180deg);
@@ -197,27 +167,14 @@
     }
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-
 
 @media screen and (orientation: portrait), screen and (max-width: 580px)  {
     .about {
         flex-direction: column;
-        // margin-top: 1em;
-        // margin-bottom: 2em;
         .about-box {
             flex-direction: column;
             padding: 0em;
             width: 100%;
-            // .aboutme {
-            //     width: 90%;
-            //     height: fit-content;
-            //     margin: 0em;
-            //     p {
-            //         padding: 1em 0em;
-            //         margin-bottom: 0em;
-            //     }
-            // }
             .profile {
                 display: flex;
                 flex-direction: column; 
