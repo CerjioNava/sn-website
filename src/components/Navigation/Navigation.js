@@ -41,7 +41,6 @@ const Navigation = () => {
     }
 
     const showMenuTrans = () => {
-        
         if (!menu) {
             setMenu(!menu);
             setTimeout(() => {
@@ -50,9 +49,24 @@ const Navigation = () => {
         }
     }
 
+    const InvertColors = () => {
+        if (document.getElementById('header-menu').style.display !== 'none') {
+            document.getElementById('header').style.filter = 'invert(100)';
+            document.getElementById('header').style.fontWeight = 'bold';
+        }
+        showMenuTrans();
+    }
+    const NormalColors = () => {
+        if (document.getElementById('header-menu').style.display !== 'none') {
+            document.getElementById('header').style.filter = 'invert(0)';
+            document.getElementById('header').style.fontWeight = 'normal';
+        }
+        showMenuTrans();
+    }
+
     return (
-        <nav className="header" >            
-            <div className='flex items-center ml4 mb1 justify-between'>
+        <nav id="header" >            
+            <div className='flex items-center ml4 justify-between'>
                 <p className="b f3">
                     <RouteLink to="/" className="alink">SERGIO.</RouteLink>
                 </p>

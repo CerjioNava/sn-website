@@ -1,17 +1,19 @@
+#allcontact {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0em;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
 #contact {
-    // display: flex;
-    
     display: grid;
     grid-template-columns: repeat(auto-fit, 32rem);
-    // height: 30vh;
     height: fit-content;
-    padding: 3em 0em;
     width: 100vw;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;        
     font-size: 1em;
     .icons {
         width: 2.2em;
@@ -28,17 +30,15 @@
     a {
         padding: 1em;
     }    
-    // h1 {
-    //     font-family: sectionTitle;
-    // }
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 580px)  {
     #contact {
         display: flex;
         flex-direction: column;
-        // height: 65%;
         font-size: 14px;
-        // gap: 1em;
+    }
+    #allcontact {
+        font-size: 14px;
     }
 }
