@@ -49,25 +49,10 @@ const Navigation = () => {
         }
     }
 
-    const InvertColors = () => {
-        if (document.getElementById('header-menu').style.display !== 'none') {
-            document.getElementById('header').style.filter = 'invert(100)';
-            document.getElementById('header').style.fontWeight = 'bold';
-        }
-        showMenuTrans();
-    }
-    const NormalColors = () => {
-        if (document.getElementById('header-menu').style.display !== 'none') {
-            document.getElementById('header').style.filter = 'invert(0)';
-            document.getElementById('header').style.fontWeight = 'normal';
-        }
-        showMenuTrans();
-    }
-
     return (
         <nav id="header" >            
-            <div className='flex items-center ml4 justify-between'>
-                <p className="b f3">
+            <div className='flex items-center justify-between'>
+                <p className="marca f3">
                     <RouteLink to="/" className="alink">SERGIO.</RouteLink>
                 </p>
                 <div className='menu' onClick={showMenu}>
