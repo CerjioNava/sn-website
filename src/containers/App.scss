@@ -28,10 +28,10 @@
   }
   cursor: pointer;
 }
-.b-scroll:active {
-  transition: 0.1s ease-in-out;
-  filter: invert(50%);
-}
+// .b-scroll:active {
+//   transition: 0.15s ease-in-out;
+//   filter: invert(50%);
+// }
 
 @media screen and (orientation: portrait), screen and (max-width: 580px) {
   .b-scroll {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Tilt from 'react-tilt';
-import { Link as RouteLink } from 'react-router-dom';
+// import { Link as RouteLink } from 'react-router-dom';
 
 // LOGOS
 import reactLogo from '../../media/Skills/react.png';

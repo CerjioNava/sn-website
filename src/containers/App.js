@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';          
 import { animateScroll } from 'react-scroll';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
