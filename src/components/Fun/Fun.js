@@ -50,12 +50,12 @@ const Fun = () => {
                 color='#4F7BFF' 
                 speed={0.015}
                 rot={0.01} 
-                minmax={[1, 2]} 
+                minmax={[2, 2]} 
             />
             {/* Red box LEFT */}
             <SpinningBox 
-                position={[-16, 10, -40]} 
-                args={[3.5, 3.5, 3.5]} 
+                position={[-18, 12, -45]} 
+                args={[4, 4, 4]} 
                 color='#FF4F7B' 
                 speed={-0.02} 
                 rot={-0.02} 
@@ -68,7 +68,7 @@ const Fun = () => {
                 color='#7BFF4F' 
                 speed={0.03} 
                 rot={-0.025} 
-                minmax={[4, 3]} 
+                minmax={[3, 3]} 
             />
             {/* Red box RIGHT */}
             <SpinningBox 
@@ -79,16 +79,24 @@ const Fun = () => {
                 rot={0.02} 
                 minmax={[5, 5]} 
             />
-            {/* Blue box LEFT DOWN */}
+            {/* Blue box LEFT BOTTOM */}
             <SpinningBox 
-                position={[-10, -50, -35]} 
+                position={[-10, -40, -35]} 
                 args={[3.5, 3.5, 3.5]} 
                 color='#4F7BFF' 
                 speed={0.015}
                 rot={0.01} 
                 minmax={[2, 3]} 
             />
-
+            {/* Yellow box RIGHT BOTTOM */}
+            <SpinningBox 
+                position={[10, -55, -25]} 
+                args={[4, 4, 4]} 
+                color='#7BFF4F' 
+                speed={0.03} 
+                rot={-0.025} 
+                minmax={[3, 3]} 
+            />
             {/* <Box position={[0, -1, -25]}  />   */}
             {/* <mesh 
                 receiveShadow

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';          
 import { animateScroll } from 'react-scroll';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 
 // STATIC
 import Navigation from '../components/Navigation/Navigation';
@@ -20,14 +20,12 @@ import './App.scss';
 // -------------------------------------------------------------------------------------------
 
 const ButtonScroll = () => {
-    
     const scrollTop = () => {
         animateScroll.scrollToTop({
             duration: 1000,
             smooth: 'easeInOutQuad'
         })
     }
-    
     return (
         <div className='b-scroll'>
             <div onClick={scrollTop}>
@@ -36,13 +34,25 @@ const ButtonScroll = () => {
         </div>
     )
 }
+
+const OnRouteChange = () => {
+    const { pathname } = useLocation();
     
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+
+    return null;
+}
+
 function App() {
     return (      
         <BrowserRouter className='main'>
             <Helmet><title>Sergio Nava | Web Developer</title></Helmet>
             <Navigation />
             <ButtonScroll />
+            <OnRouteChange />
             <Switch>
                 <Route path='/' exact component={Home} />
                 <Route path='/about' component={About} />

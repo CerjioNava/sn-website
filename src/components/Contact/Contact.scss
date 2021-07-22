@@ -37,6 +37,12 @@
         display: flex;
         flex-direction: column;
         font-size: 14px;
+        div {
+            padding-bottom: 1em;
+        }
+        .icons {
+            opacity: 1;
+        }
     }
     #allcontact {
         font-size: 14px;
