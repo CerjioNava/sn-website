@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet'; 
 import './Portfolio.scss';
 
+// -------------------------------------------------------------------------------------------
+
 const Portfolio = () => {
     return (
         <>

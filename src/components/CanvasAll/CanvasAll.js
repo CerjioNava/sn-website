@@ -9,7 +9,6 @@ const CanvasAll = () => {
     
     useEffect(() => {
         document.getElementById('canva').style.position = 'fixed';  
-        // console.log(window.pageYOffset);  
     })
     
     function CameraMovement() {
@@ -32,9 +31,6 @@ const CanvasAll = () => {
             camera.position.setY(posY);
             camera.rotation.x = 0;
             camera.position.setZ(posZ);
-            // console.log(document.getElementById('canva').clientWidth)
-            // console.log(document.getElementById("canva").offsetHeight, document.getElementById("canva").offsetWidth);
-            
         })
     }  
     

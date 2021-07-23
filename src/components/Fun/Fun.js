@@ -2,10 +2,6 @@ import React, { useRef } from 'react';
 import { Box } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
-
-// import Kirbo from '../Kirbo/Kirbo';
-// import Kirby from '../Kirby/Kirby';
-
 // -------------------------------------------------------------------------------------------
 
 const SpinningBox = ({ position, args, color, speed, rot, minmax }) => {
@@ -97,17 +93,6 @@ const Fun = () => {
                 rot={-0.025} 
                 minmax={[3, 3]} 
             />
-            {/* <Box position={[0, -1, -25]}  />   */}
-            {/* <mesh 
-                receiveShadow
-                rotation={[-Math.PI / 2, 0, 0]} 
-                position={[0, -15, -30]}
-            >
-                <Plane args={[20, 20]} />
-                <meshStandardMaterial attach='material' color='orange' />
-            </mesh>           */}
-            {/* <OrbitControls /> */}
-            
         </>
     )
 }
