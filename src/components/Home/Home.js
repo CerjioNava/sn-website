@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link as RouteLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet'; 
 
 // IMAGES
 import profile from '../../media/Gallery/profile.png';      // Profile
-import portfo1 from '../../media/Gallery/Pixel4.gif';       // Kirby
-import portfo2 from '../../media/Gallery/Pixel1-5.gif';     // Kevin
+import portfo1 from '../../media/Gallery/Pixel1-5.gif';     // Kevin
+import portfo2 from '../../media/Gallery/Pixel4.gif';       // Kirby
 import portfo3 from '../../media/Gallery/Pixel3.gif';       // Cacodemon
 import arrow from '../../media/Nav/arrow6.png';
 
@@ -50,58 +50,42 @@ const Portfolio = () => {
             setPortfo(portfo+num);
     }
 
-    useEffect(() => {
-        console.log(portfo)
-    })
+    const ContentSection = (portfoimg, title, content) => {
+        return (
+            <div className='projects'>
+                <div className='project-view'>
+                    <img src={portfoimg} alt='Videogames' />
+                </div>
+                <div className='content'> 
+                    <h1> {title} </h1>
+                    <p>
+                        <br/>
+                        {content}
+                    </p>
+                </div>
+            </div>
+        )
+    }
 
     const Content = () => {
         if (portfo === 0) {
-            return (
-                <div className='projects'>
-                    <div className='project-view'>
-                        <img src={portfo2} alt='Videogames' />
-                    </div>
-                    <div className='content'> 
-                        <h1> Check out some of my latest work! </h1>
-                        <p>
-                            <br/>
-                            There are also video games, have fun!
-                        </p>
-                    </div>
-                </div>
-            )
+            return ContentSection(
+                portfo1, 
+                'Check out some of my latest work!',
+                'There are also video games, have fun!' 
+                )
         } else if (portfo === 1) {
-            return (
-                <div className='projects'>
-                    <div className='project-view'>
-                        <img src={portfo1} alt='Videogames' />
-                    </div>
-                    <div className='content'> 
-                        <h1> You can play my video games! </h1>
-                        <p>
-                            <br/>
-                            Don't be so serious, come and laugh a little!
-                            There will always be time for entertainment.
-                        </p>
-                    </div>
-                </div>
-            )
+            return ContentSection(
+                portfo2, 
+                'You can play my video games!',
+                "Don't be so serious, come and laugh a little! There will always be time for entertainment."
+                )
         } else 
-            return (
-                <div className='projects'>
-                    <div className='project-view'>
-                        <img src={portfo3} alt='Videogames' />
-                    </div>
-                    <div className='content'> 
-                        <h1> More projects </h1>
-                        <p>
-                            <br/>
-                            Coming soon...
-                        </p>
-                    </div>
-                </div>
-            )
-        
+            return ContentSection(
+                portfo3,
+                'More projects',
+                'Coming soon...'
+                )
     }
 
     return (
