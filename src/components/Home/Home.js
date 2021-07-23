@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouteLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet'; 
 
 // IMAGES
 import profile from '../../media/Gallery/profile.png';      // Profile
@@ -128,6 +129,7 @@ const Home = () => {
 
     return (
         <>  
+            <Helmet><title>Sergio Nava | Home</title></Helmet>
             <div className="intro">
                 <div>
                     <h1>

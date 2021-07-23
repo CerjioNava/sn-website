@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';          
+import React, { useEffect } from 'react';    
 import { animateScroll } from 'react-scroll';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 
@@ -48,7 +47,6 @@ const OnRouteChange = () => {
 function App() {
     return (      
         <BrowserRouter className='main'>
-            <Helmet><title>Sergio Nava | Web Developer</title></Helmet>
             <Navigation />
             <ButtonScroll />
             <OnRouteChange />
