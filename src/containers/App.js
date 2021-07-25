@@ -16,7 +16,7 @@ import Portfolio from '../components/Portfolio/Portfolio';
 import arrowUp from '../media/Nav/arrowup.png';
 import './App.scss';
 
-// -------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------
 
 const ButtonScroll = () => {
     const scrollTop = () => {
