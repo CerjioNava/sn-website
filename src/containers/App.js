@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { animateScroll } from 'react-scroll';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 
-// STATIC/
+// STATIC
 import Navigation from '../components/Navigation/Navigation';
 import CanvasAll from '../components/CanvasAll/CanvasAll';
 import Contact from '../components/Contact/Contact';
