@@ -1,0 +1,50 @@
+#allcontact {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0em;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 32rem);
+  height: fit-content;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  .icons {
+    width: 2.2em;
+    height: 2.2em;
+    padding: 0.2em;
+    margin-top: 0.5em;
+    filter: invert(100%);
+    opacity: 0.75;
+  }
+  .icons:hover {
+    transition: 0.2s;
+    opacity: 1;
+  }
+  a {
+    padding: 1em;
+  }
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 580px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    div {
+      padding-bottom: 1em;
+    }
+    .icons {
+      opacity: 1;
+    }
+  }
+  #allcontact {
+    font-size: 14px;
+  }
+}

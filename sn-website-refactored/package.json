@@ -1,0 +1,43 @@
+{
+  "name": "sn-website-refactored",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,css,scss,md}\""
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-intersection-observer": "^10.0.3",
+    "react-router-dom": "^6.30.3",
+    "react-scroll": "^1.9.3",
+    "react-tilt": "^1.0.2",
+    "sass": "^1.97.3",
+    "smooth-scrollbar": "^8.8.4",
+    "tachyons": "^4.12.0",
+    "three": "^0.183.1",
+    "web-vitals": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "prettier": "^3.8.1",
+    "vite": "^7.3.1"
+  }
+}

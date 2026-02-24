@@ -1,0 +1,41 @@
+/* Fallback: use Google Fonts (loaded in index.html); local fonts optional in public/fonts/ */
+@font-face {
+  font-family: SCP-r;
+  src: local("Source Code Pro"), local("SourceCodePro-Regular"),
+    url(/fonts/SourceCodePro-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: sectionTitle;
+  src: local("Mitr"), local("Mitr-Medium"),
+    url(/fonts/Mitr-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: myName;
+  src: local("Mitr"), local("Mitr-Medium"),
+    url(/fonts/Mitr-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+* {
+  font-family: "Source Code Pro", SCP-r, Consolas, Monaco, monospace;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: azure;
+  overflow-x: hidden;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
